@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Content/Template1/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="~/Content/Template1/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="~/Content/Template1/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
+
+    <style>
+        ul.nav.nav-tabs { 
+            margin: 10px 0px;
+          
+            margin-top:20px;
+            
+        }
+
+            ul.nav.nav-tabs li:not(.active) a {
+                background-color: #eeeeee;
+                color: grey;
+            }
+
+            ul.nav.nav-tabs li.active a {
+                border-top: 3px solid #16a765;
+            }
+
+        span.fsield-validation-error {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <script src="~/Content/Template1/js/core/jquery.min.js"></script>
+    <script src="~/Content/Template1/js/core/popper.min.js"></script>
+    <script src="~/Content/Template1/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Google Maps Plugin    -->
+    <!-- Chart JS -->
+    <script src="~/Content/Template1/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="~/Content/Template1/js/plugins/bootstrap-notify.js"></script>
+    <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+    <script src="~/Content/Template1/demo/demo.js"></script>
+    <div class="wrapper ">
+        <div class="sidebar" data-color="darkblue" data-active-color="danger">
+
+            <div class="logo">
+                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                    <div class="logo-image-small">
+                        <img src="~/Content/Template1/img/logo-small.png">
+                    </div>
+                </a>
+                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                    
+                        @if (Session["TaiKhoan"] != null)
+                        {
+                            
+                                
+                                    @Session["TenNguoiDung"]
+                                   
+                                
+                            
+
+                            
+                        }
+                    
+
+                </a>
+                <a href="@Url.Action("DangXuat", "QuanLyTaiKhoan")"> Đăng xuất</a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="active ">
+                        <a href="@Url.Action("Index","QuanLy")">
+                            <i class="nc-icon nc-bank"></i>
+                            <p>Trang chủ</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","QuanLySuKien")">
+                            <i class="nc-icon nc-badge"></i>
+                            <p>Quản lý sự kiện</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","QuanLySinhVien")">
+                            <i class="nc-icon nc-bell-55"></i>
+                            <p>Quản ly sinh viên</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","QuanLyDiemDanhGiaRenLuyen")">
+                            <i class="nc-icon nc-paper"></i>
+                            <p>Quản lý điểm rèn luyện</p>
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="./user.html">
+                            <i class="nc-icon nc-single-copy-04"></i>
+                            <p>Xuất báo cáo</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tables.html">
+                            <i class="nc-icon nc-bullet-list-67"></i>
+                            <p>Điều lệ</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <div class="container body-content">
+                @RenderBody()
+            </div>
+        </div>   
+        </div>
+    <div class="loaderbody" id="loaderbody">
+        <div class="loader"></div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/Scripts.js"></script>
+    <script src="~/Scripts/notify.min.js"></script>
+</body>
+</html>

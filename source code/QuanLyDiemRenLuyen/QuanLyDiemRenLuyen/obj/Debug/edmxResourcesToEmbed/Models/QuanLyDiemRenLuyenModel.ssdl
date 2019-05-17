@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QL_DIEMRENLUYENModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DANHGIARENLUYEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FK_sMaSVID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PK_sNamHoc" Type="int" Nullable="false" />
+    <Property Name="PK_sHockyID" Type="int" Nullable="false" />
+    <Property Name="DiHocDayDu" Type="int" />
+    <Property Name="KQHocTap" Type="int" />
+    <Property Name="CoGangVuotKho" Type="int" />
+    <Property Name="NCKH" Type="int" />
+    <Property Name="TinHoc" Type="int" />
+    <Property Name="NgoaiNgu" Type="int" />
+    <Property Name="TongTieuChi1" Type="int" />
+    <Property Name="KhongViPham" Type="int" />
+    <Property Name="GiuGinAnNinh" Type="int" />
+    <Property Name="GiuVeSinh" Type="int" />
+    <Property Name="TongTieuChi2" Type="int" />
+    <Property Name="ThamGiaHD" Type="int" />
+    <Property Name="LLCapboMon" Type="int" />
+    <Property Name="LLCapKhoa" Type="int" />
+    <Property Name="KTDoanKhoa" Type="int" />
+    <Property Name="KTCapTruong" Type="int" />
+    <Property Name="KTCapCaoHon" Type="int" />
+    <Property Name="TongTieuChi3" Type="int" />
+    <Property Name="KhongViPhamPLNN" Type="int" />
+    <Property Name="CoTinhThanGiupDo" Type="int" />
+    <Property Name="ThamGiaDoi" Type="int" />
+    <Property Name="TongTieuChi4" Type="int" />
+    <Property Name="LopTruong" Type="int" />
+    <Property Name="CanSuLop" Type="int" />
+    <Property Name="CacThanhTichDacBiet" Type="int" />
+    <Property Name="TongTieuChi5" Type="int" />
+    <Property Name="iTongdiem" Type="int" />
+    <Property Name="sXeploai" Type="nvarchar" MaxLength="20" />
+    <Property Name="dNgaylap" Type="date" />
+    <Property Name="TrangThai" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DANHGIARENLUYENLOPTRUONG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDDGSV" Type="int" Nullable="false" />
+    <Property Name="FK_sMaSVID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PK_sNamHoc" Type="int" />
+    <Property Name="PK_sHockyID" Type="int" />
+    <Property Name="DiHocDayDu" Type="int" />
+    <Property Name="KQHocTap" Type="int" />
+    <Property Name="CoGangVuotKho" Type="int" />
+    <Property Name="NCKH" Type="int" />
+    <Property Name="TinHoc" Type="int" />
+    <Property Name="NgoaiNgu" Type="int" />
+    <Property Name="TongTieuChi1" Type="int" />
+    <Property Name="KhongViPham" Type="int" />
+    <Property Name="GiuGinAnNinh" Type="int" />
+    <Property Name="GiuVeSinh" Type="int" />
+    <Property Name="TongTieuChi2" Type="int" />
+    <Property Name="ThamGiaHD" Type="int" />
+    <Property Name="LLCapboMon" Type="int" />
+    <Property Name="LLCapKhoa" Type="int" />
+    <Property Name="KTDoanKhoa" Type="int" />
+    <Property Name="KTCapTruong" Type="int" />
+    <Property Name="KTCapCaoHon" Type="int" />
+    <Property Name="TongTieuChi3" Type="int" />
+    <Property Name="KhongViPhamPLNN" Type="int" />
+    <Property Name="CoTinhThanGiupDo" Type="int" />
+    <Property Name="ThamGiaDoi" Type="int" />
+    <Property Name="TongTieuChi4" Type="int" />
+    <Property Name="LopTruong" Type="int" />
+    <Property Name="CanSuLop" Type="int" />
+    <Property Name="CacThanhTichDacBiet" Type="int" />
+    <Property Name="TongTieuChi5" Type="int" />
+    <Property Name="iTongdiem" Type="int" />
+    <Property Name="sXeploai" Type="nvarchar" MaxLength="20" />
+    <Property Name="dNgaylap" Type="date" />
+    <Property Name="Ghichu" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DANHGIARENLUYENTHAYCO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDLopTruong" Type="int" Nullable="false" />
+    <Property Name="PK_sNamHoc" Type="varchar" MaxLength="50" />
+    <Property Name="PK_sHockyID" Type="varchar" MaxLength="5" />
+    <Property Name="FK_sMaSVID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PK_sMaGVID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DiHocDayDu" Type="int" />
+    <Property Name="KQHocTap" Type="int" />
+    <Property Name="CoGangVuotKho" Type="int" />
+    <Property Name="NCKH" Type="int" />
+    <Property Name="TinHoc" Type="int" />
+    <Property Name="NgoaiNgu" Type="int" />
+    <Property Name="TongTieuChi1" Type="int" />
+    <Property Name="KhongViPham" Type="int" />
+    <Property Name="GiuGinAnNinh" Type="int" />
+    <Property Name="GiuVeSinh" Type="int" />
+    <Property Name="TongTieuChi2" Type="int" />
+    <Property Name="ThamGiaHD" Type="int" />
+    <Property Name="LLCapboMon" Type="int" />
+    <Property Name="LLCapKhoa" Type="int" />
+    <Property Name="KTDoanKhoa" Type="int" />
+    <Property Name="KTCapTruong" Type="int" />
+    <Property Name="KTCapCaoHon" Type="int" />
+    <Property Name="TongTieuChi3" Type="int" />
+    <Property Name="KhongViPhamPLNN" Type="int" />
+    <Property Name="CoTinhThanGiupDo" Type="int" />
+    <Property Name="ThamGiaDoi" Type="int" />
+    <Property Name="TongTieuChi4" Type="int" />
+    <Property Name="LopTruong" Type="int" />
+    <Property Name="CanSuLop" Type="int" />
+    <Property Name="CacThanhTichDacBiet" Type="int" />
+    <Property Name="TongTieuChi5" Type="int" />
+    <Property Name="iTongdiem" Type="int" />
+    <Property Name="sXeploai" Type="nvarchar" MaxLength="20" />
+    <Property Name="dNgaylap" Type="date" />
+    <Property Name="Ghichu" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GIAOVIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PK_sMaGVID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sTenGV" Type="nvarchar" MaxLength="100" />
+    <Property Name="dNgaysinh" Type="date" />
+    <Property Name="sGioitinh" Type="nvarchar" MaxLength="3" />
+    <Property Name="sQuequan" Type="nvarchar" MaxLength="100" />
+    <Property Name="sChucvu" Type="nvarchar" MaxLength="100" />
+    <Property Name="FK_sMaKhoaID" Type="varchar" MaxLength="50" />
+    <Property Name="FK_sMaLopID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HOCKY">
+    <Key>
+      <PropertyRef Name="hocky" />
+    </Key>
+    <Property Name="hocky" Type="varchar" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KHOA">
+    <Key>
+      <PropertyRef Name="PK_sMaKhoaID" />
+    </Key>
+    <Property Name="PK_sMaKhoaID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sTenKhoa" Type="nvarchar" MaxLength="100" />
+    <Property Name="sChunhiemkhoa" Type="varchar" MaxLength="50" />
+    <Property Name="sDiachi" Type="nvarchar" MaxLength="100" />
+    <Property Name="sDienthoai" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LOP">
+    <Key>
+      <PropertyRef Name="PK_sMaLopID" />
+    </Key>
+    <Property Name="PK_sMaLopID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sTenLop" Type="nvarchar" MaxLength="100" />
+    <Property Name="sNambatdau" Type="int" />
+    <Property Name="sNamketthuc" Type="int" />
+    <Property Name="sCovanhoctap" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NAMHOC">
+    <Key>
+      <PropertyRef Name="namhoc" />
+    </Key>
+    <Property Name="namhoc" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Quyen">
+    <Key>
+      <PropertyRef Name="IDQuyen" />
+    </Key>
+    <Property Name="IDQuyen" Type="int" Nullable="false" />
+    <Property Name="TenQuyen" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SINHVIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PK_sMaSVID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sTenSV" Type="nvarchar" MaxLength="100" />
+    <Property Name="dNgaysinh" Type="date" />
+    <Property Name="sChucvu" Type="nvarchar" MaxLength="100" />
+    <Property Name="sGioitinh" Type="nvarchar" MaxLength="3" />
+    <Property Name="sQuequan" Type="nvarchar" MaxLength="50" />
+    <Property Name="FK_sMaLopID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SUKIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENSK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DIADIEM" Type="nvarchar" MaxLength="50" />
+    <Property Name="THOIGIAN" Type="date" />
+    <Property Name="DIEM" Type="int" />
+    <Property Name="TINHTRANG" Type="nchar" MaxLength="10" />
+    <Property Name="GHICHU" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TAIKHOAN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="IDQuyen" Type="int" />
+  </EntityType>
+  <EntityType Name="THAMGIASUKIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MASV" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MASK" Type="int" Nullable="false" />
+    <Property Name="THOIGIAN" Type="date" />
+    <Property Name="GHICHU" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Function Name="dk_locsinhviendanhgia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="dk_locsinhviendanhgiagv" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="dk_locsinhviendanhgialt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ds_sinhviendanhgiaGV" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="malop" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ds_themdanhgiadiemrenluyen1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="dihocdaydu" Type="int" Mode="In" />
+    <Parameter Name="kqhoctap" Type="int" Mode="In" />
+    <Parameter Name="cokhanvuotkho" Type="int" Mode="In" />
+    <Parameter Name="nckh" Type="int" Mode="In" />
+    <Parameter Name="tinhoc" Type="int" Mode="In" />
+    <Parameter Name="ngoaingu" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi1" Type="int" Mode="In" />
+    <Parameter Name="khongvipham" Type="int" Mode="In" />
+    <Parameter Name="giuginanninh" Type="int" Mode="In" />
+    <Parameter Name="giuginvesinh" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi2" Type="int" Mode="In" />
+    <Parameter Name="thamgiaHD" Type="int" Mode="In" />
+    <Parameter Name="llcanbomon" Type="int" Mode="In" />
+    <Parameter Name="llcapkhoa" Type="int" Mode="In" />
+    <Parameter Name="ktdoankhoa" Type="int" Mode="In" />
+    <Parameter Name="ktcaptruong" Type="int" Mode="In" />
+    <Parameter Name="ktcapcaohon" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi3" Type="int" Mode="In" />
+    <Parameter Name="khongviphamplnn" Type="int" Mode="In" />
+    <Parameter Name="cotinhthangiupdo" Type="int" Mode="In" />
+    <Parameter Name="thamgiadoi" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi4" Type="int" Mode="In" />
+    <Parameter Name="loptruong" Type="int" Mode="In" />
+    <Parameter Name="cansulop" Type="int" Mode="In" />
+    <Parameter Name="thanhtichdacbiet" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi5" Type="int" Mode="In" />
+    <Parameter Name="tongdiem" Type="int" Mode="In" />
+    <Parameter Name="xeploai" Type="nvarchar" Mode="In" />
+    <Parameter Name="id" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="dsdanhgiadiemrenluyenGV" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="dsdanhgiadiemrenluyenGV1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="hienthidsdgsvdglt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sd_sinhviendanhgia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="malop" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_cho11" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_DanhSachSuKien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_laydiemsk" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_laydiemsukien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_LayDiemThamGiaHD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="hocki" Type="int" Mode="In" />
+    <Parameter Name="nam" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_laysk" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_test" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_ThemDanhGiaDiemRenLuyen" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="dihocdaydu" Type="int" Mode="In" />
+    <Parameter Name="kqhoctap" Type="int" Mode="In" />
+    <Parameter Name="cokhanvuotkho" Type="int" Mode="In" />
+    <Parameter Name="nckh" Type="int" Mode="In" />
+    <Parameter Name="tinhoc" Type="int" Mode="In" />
+    <Parameter Name="ngoaingu" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi1" Type="int" Mode="In" />
+    <Parameter Name="khongvipham" Type="int" Mode="In" />
+    <Parameter Name="giuginanninh" Type="int" Mode="In" />
+    <Parameter Name="giuginvesinh" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi2" Type="int" Mode="In" />
+    <Parameter Name="thamgiaHD" Type="int" Mode="In" />
+    <Parameter Name="llcanbomon" Type="int" Mode="In" />
+    <Parameter Name="llcapkhoa" Type="int" Mode="In" />
+    <Parameter Name="ktdoankhoa" Type="int" Mode="In" />
+    <Parameter Name="ktcaptruong" Type="int" Mode="In" />
+    <Parameter Name="ktcapcaohon" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi3" Type="int" Mode="In" />
+    <Parameter Name="khongviphamplnn" Type="int" Mode="In" />
+    <Parameter Name="cotinhthangiupdo" Type="int" Mode="In" />
+    <Parameter Name="thamgiadoi" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi4" Type="int" Mode="In" />
+    <Parameter Name="loptruong" Type="int" Mode="In" />
+    <Parameter Name="cansulop" Type="int" Mode="In" />
+    <Parameter Name="thanhtichdacbiet" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi5" Type="int" Mode="In" />
+    <Parameter Name="tongdiem" Type="int" Mode="In" />
+    <Parameter Name="xeploai" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_ThemDanhGiaDiemRenLuyenGV" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iddglt" Type="int" Mode="In" />
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="magv" Type="nvarchar" Mode="In" />
+    <Parameter Name="dihocdaydu" Type="int" Mode="In" />
+    <Parameter Name="kqhoctap" Type="int" Mode="In" />
+    <Parameter Name="cokhanvuotkho" Type="int" Mode="In" />
+    <Parameter Name="nckh" Type="int" Mode="In" />
+    <Parameter Name="tinhoc" Type="int" Mode="In" />
+    <Parameter Name="ngoaingu" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi1" Type="int" Mode="In" />
+    <Parameter Name="khongvipham" Type="int" Mode="In" />
+    <Parameter Name="giuginanninh" Type="int" Mode="In" />
+    <Parameter Name="giuginvesinh" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi2" Type="int" Mode="In" />
+    <Parameter Name="thamgiaHD" Type="int" Mode="In" />
+    <Parameter Name="llcanbomon" Type="int" Mode="In" />
+    <Parameter Name="llcapkhoa" Type="int" Mode="In" />
+    <Parameter Name="ktdoankhoa" Type="int" Mode="In" />
+    <Parameter Name="ktcaptruong" Type="int" Mode="In" />
+    <Parameter Name="ktcapcaohon" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi3" Type="int" Mode="In" />
+    <Parameter Name="khongviphamplnn" Type="int" Mode="In" />
+    <Parameter Name="cotinhthangiupdo" Type="int" Mode="In" />
+    <Parameter Name="thamgiadoi" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi4" Type="int" Mode="In" />
+    <Parameter Name="loptruong" Type="int" Mode="In" />
+    <Parameter Name="cansulop" Type="int" Mode="In" />
+    <Parameter Name="thanhtichdacbiet" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi5" Type="int" Mode="In" />
+    <Parameter Name="tongdiem" Type="int" Mode="In" />
+    <Parameter Name="xeploai" Type="nvarchar" Mode="In" />
+    <Parameter Name="id" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="sp_ThemDanhGiaDiemRenLuyenGV1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iddglt" Type="int" Mode="In" />
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="magv" Type="nvarchar" Mode="In" />
+    <Parameter Name="dihocdaydu" Type="int" Mode="In" />
+    <Parameter Name="kqhoctap" Type="int" Mode="In" />
+    <Parameter Name="cokhanvuotkho" Type="int" Mode="In" />
+    <Parameter Name="nckh" Type="int" Mode="In" />
+    <Parameter Name="tinhoc" Type="int" Mode="In" />
+    <Parameter Name="ngoaingu" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi1" Type="int" Mode="In" />
+    <Parameter Name="khongvipham" Type="int" Mode="In" />
+    <Parameter Name="giuginanninh" Type="int" Mode="In" />
+    <Parameter Name="giuginvesinh" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi2" Type="int" Mode="In" />
+    <Parameter Name="thamgiaHD" Type="int" Mode="In" />
+    <Parameter Name="llcanbomon" Type="int" Mode="In" />
+    <Parameter Name="llcapkhoa" Type="int" Mode="In" />
+    <Parameter Name="ktdoankhoa" Type="int" Mode="In" />
+    <Parameter Name="ktcaptruong" Type="int" Mode="In" />
+    <Parameter Name="ktcapcaohon" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi3" Type="int" Mode="In" />
+    <Parameter Name="khongviphamplnn" Type="int" Mode="In" />
+    <Parameter Name="cotinhthangiupdo" Type="int" Mode="In" />
+    <Parameter Name="thamgiadoi" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi4" Type="int" Mode="In" />
+    <Parameter Name="loptruong" Type="int" Mode="In" />
+    <Parameter Name="cansulop" Type="int" Mode="In" />
+    <Parameter Name="thanhtichdacbiet" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi5" Type="int" Mode="In" />
+    <Parameter Name="tongdiem" Type="int" Mode="In" />
+    <Parameter Name="xeploai" Type="nvarchar" Mode="In" />
+    <Parameter Name="id" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="sp_ThemDanhGiaDiemRenLuyenLT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iddgsv" Type="int" Mode="In" />
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="dihocdaydu" Type="int" Mode="In" />
+    <Parameter Name="kqhoctap" Type="int" Mode="In" />
+    <Parameter Name="cokhanvuotkho" Type="int" Mode="In" />
+    <Parameter Name="nckh" Type="int" Mode="In" />
+    <Parameter Name="tinhoc" Type="int" Mode="In" />
+    <Parameter Name="ngoaingu" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi1" Type="int" Mode="In" />
+    <Parameter Name="khongvipham" Type="int" Mode="In" />
+    <Parameter Name="giuginanninh" Type="int" Mode="In" />
+    <Parameter Name="giuginvesinh" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi2" Type="int" Mode="In" />
+    <Parameter Name="thamgiaHD" Type="int" Mode="In" />
+    <Parameter Name="llcanbomon" Type="int" Mode="In" />
+    <Parameter Name="llcapkhoa" Type="int" Mode="In" />
+    <Parameter Name="ktdoankhoa" Type="int" Mode="In" />
+    <Parameter Name="ktcaptruong" Type="int" Mode="In" />
+    <Parameter Name="ktcapcaohon" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi3" Type="int" Mode="In" />
+    <Parameter Name="khongviphamplnn" Type="int" Mode="In" />
+    <Parameter Name="cotinhthangiupdo" Type="int" Mode="In" />
+    <Parameter Name="thamgiadoi" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi4" Type="int" Mode="In" />
+    <Parameter Name="loptruong" Type="int" Mode="In" />
+    <Parameter Name="cansulop" Type="int" Mode="In" />
+    <Parameter Name="thanhtichdacbiet" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi5" Type="int" Mode="In" />
+    <Parameter Name="tongdiem" Type="int" Mode="In" />
+    <Parameter Name="xeploai" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_ThemDanhGiaDiemRenLuyenLT1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iddgsv" Type="int" Mode="In" />
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="dihocdaydu" Type="int" Mode="In" />
+    <Parameter Name="kqhoctap" Type="int" Mode="In" />
+    <Parameter Name="cokhanvuotkho" Type="int" Mode="In" />
+    <Parameter Name="nckh" Type="int" Mode="In" />
+    <Parameter Name="tinhoc" Type="int" Mode="In" />
+    <Parameter Name="ngoaingu" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi1" Type="int" Mode="In" />
+    <Parameter Name="khongvipham" Type="int" Mode="In" />
+    <Parameter Name="giuginanninh" Type="int" Mode="In" />
+    <Parameter Name="giuginvesinh" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi2" Type="int" Mode="In" />
+    <Parameter Name="thamgiaHD" Type="int" Mode="In" />
+    <Parameter Name="llcanbomon" Type="int" Mode="In" />
+    <Parameter Name="llcapkhoa" Type="int" Mode="In" />
+    <Parameter Name="ktdoankhoa" Type="int" Mode="In" />
+    <Parameter Name="ktcaptruong" Type="int" Mode="In" />
+    <Parameter Name="ktcapcaohon" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi3" Type="int" Mode="In" />
+    <Parameter Name="khongviphamplnn" Type="int" Mode="In" />
+    <Parameter Name="cotinhthangiupdo" Type="int" Mode="In" />
+    <Parameter Name="thamgiadoi" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi4" Type="int" Mode="In" />
+    <Parameter Name="loptruong" Type="int" Mode="In" />
+    <Parameter Name="cansulop" Type="int" Mode="In" />
+    <Parameter Name="thanhtichdacbiet" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi5" Type="int" Mode="In" />
+    <Parameter Name="tongdiem" Type="int" Mode="In" />
+    <Parameter Name="xeploai" Type="nvarchar" Mode="In" />
+    <Parameter Name="id" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="sp_updateDanhGiaDiemRenLuyenGV1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="dihocdaydu" Type="int" Mode="In" />
+    <Parameter Name="kqhoctap" Type="int" Mode="In" />
+    <Parameter Name="cokhanvuotkho" Type="int" Mode="In" />
+    <Parameter Name="nckh" Type="int" Mode="In" />
+    <Parameter Name="tinhoc" Type="int" Mode="In" />
+    <Parameter Name="ngoaingu" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi1" Type="int" Mode="In" />
+    <Parameter Name="khongvipham" Type="int" Mode="In" />
+    <Parameter Name="giuginanninh" Type="int" Mode="In" />
+    <Parameter Name="giuginvesinh" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi2" Type="int" Mode="In" />
+    <Parameter Name="thamgiaHD" Type="int" Mode="In" />
+    <Parameter Name="llcanbomon" Type="int" Mode="In" />
+    <Parameter Name="llcapkhoa" Type="int" Mode="In" />
+    <Parameter Name="ktdoankhoa" Type="int" Mode="In" />
+    <Parameter Name="ktcaptruong" Type="int" Mode="In" />
+    <Parameter Name="ktcapcaohon" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi3" Type="int" Mode="In" />
+    <Parameter Name="khongviphamplnn" Type="int" Mode="In" />
+    <Parameter Name="cotinhthangiupdo" Type="int" Mode="In" />
+    <Parameter Name="thamgiadoi" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi4" Type="int" Mode="In" />
+    <Parameter Name="loptruong" Type="int" Mode="In" />
+    <Parameter Name="cansulop" Type="int" Mode="In" />
+    <Parameter Name="thanhtichdacbiet" Type="int" Mode="In" />
+    <Parameter Name="tongtieuchi5" Type="int" Mode="In" />
+    <Parameter Name="tongdiem" Type="int" Mode="In" />
+    <Parameter Name="xeploai" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_xemdiemrenluyen1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="phanbiet" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_xemdiemrenluyen2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="masv" Type="nvarchar" Mode="In" />
+    <Parameter Name="phanbiet" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="QL_DIEMRENLUYENModelStoreContainer">
+    <EntitySet Name="DANHGIARENLUYEN" EntityType="Self.DANHGIARENLUYEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DANHGIARENLUYENLOPTRUONG" EntityType="Self.DANHGIARENLUYENLOPTRUONG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DANHGIARENLUYENTHAYCO" EntityType="Self.DANHGIARENLUYENTHAYCO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIAOVIEN" EntityType="Self.GIAOVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOCKY" EntityType="Self.HOCKY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHOA" EntityType="Self.KHOA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOP" EntityType="Self.LOP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NAMHOC" EntityType="Self.NAMHOC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Quyen" EntityType="Self.Quyen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SINHVIEN" EntityType="Self.SINHVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SUKIEN" EntityType="Self.SUKIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="THAMGIASUKIEN" EntityType="Self.THAMGIASUKIEN" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

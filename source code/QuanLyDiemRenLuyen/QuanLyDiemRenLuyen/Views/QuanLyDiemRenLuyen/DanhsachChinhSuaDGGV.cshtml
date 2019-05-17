@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Shared/_LayoutNguoiDung.cshtml";
+}
+<link href="~/Content/NguoiDung/danhsach.css" rel="stylesheet" />
+
+@model List<QuanLyDiemRenLuyen.Models.dsdanhgiadiemrenluyenGV1_Result>
+<div style="width:50%; height:50%; margin:auto;">
+    <h2 style="width:100%; text-align:center">Danh sách sinh viên đã đánh giá điểm rèn luyện</h2>
+    </br>
+    <ol class="rectangle-list">
+        @foreach (var item in Model)
+        {
+            <li><a href="@Url.Action("ChinhSuaDGGV", "QuanLyDiemRenLuyen", new { ID = item.ID})"> @item.sTenSV</a></li>
+
+        }
+    </ol>
+</div>
+

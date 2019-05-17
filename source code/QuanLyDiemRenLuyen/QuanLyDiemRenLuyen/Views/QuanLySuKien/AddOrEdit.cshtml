@@ -1,0 +1,89 @@
+﻿@model QuanLyDiemRenLuyen.Models.SUKIEN
+
+@{
+    ViewBag.Title = "AddOrEdit";
+    Layout = null;
+}
+
+
+
+@using (Html.BeginForm("AddOrEdit", "QuanLySuKien", FormMethod.Post, new { enctype = "multipart/form-data", onSubmit = "return jQueryAjaxPost(this);", data_restUrl = Url.Action("AddOrEdit", "QuanLySuKien", new { id = 0 }) }))
+{
+   @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.ID)
+
+
+            <div class="col-md-6">
+                <div  class="form-group">
+                    <label style="text-align: left; width:200px" class = "control-label col-md-2">Tên Sự kiện</label>
+                  
+                    <div style="margin-left:100px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.TENSK, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TENSK)
+                    </div>
+                </div>
+
+                    <div class="form-group">
+                        <label style="text-align: left; width:115px;" class="control-label col-md-2">Địa Điểm</label>
+                        <div style="margin-left:100px; margin-top:-25px; " class="col-md-10">
+                            @Html.EditorFor(model => model.DIADIEM, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DIADIEM)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="text-align: left; width:115px;" class="control-label col-md-2">Thời Gian</label>
+                        <div style="margin-left:100px; margin-top:-25px;"class="col-md-10">
+                            @Html.EditorFor(model => model.THOIGIAN, new { htmlAttributes = new { @class = "form-control" } })
+                           @Html.ValueFor(model => model.THOIGIAN, "{0:dd/MM/yyyy}")    
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="text-align: left; width:115px;" class="control-label col-md-2">Điểm</label>
+                        <div style="margin-left:100px; margin-top:-25px;" class="col-md-10">
+                            @Html.EditorFor(model => model.DIEM, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DIEM)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="text-align: left; width:115px;" class="control-label col-md-2">Tình Trạng</label>
+                        <div style="margin-left:100px; margin-top:-25px;" class="col-md-10">
+                            @Html.EditorFor(model => model.TINHTRANG, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.TINHTRANG)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="text-align: left; width:115px;" class="control-label col-md-2">Ghi Chú</label>
+                        <div style="margin-left:100px; margin-top:-25px;" class="col-md-10">
+                            @Html.EditorFor(model => model.GHICHU, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.GHICHU)
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Xác nhận " class="btn btn-default" />
+                        @if (Model.ID != 0)
+                        {
+                            <a class="btn btn-success" onclick="refreshAddNewTab('@Url.Action("AddOrEdit","QuanLySuKien",new{id=0})',false)"><i class="fa fa-plus"></i> Thêm mới</a>
+                        }
+                    </div>
+                </div>
+
+                  
+            </div>
+        </div>
+   </div>
+
+        }
+
+
+
+
+
+
+
+

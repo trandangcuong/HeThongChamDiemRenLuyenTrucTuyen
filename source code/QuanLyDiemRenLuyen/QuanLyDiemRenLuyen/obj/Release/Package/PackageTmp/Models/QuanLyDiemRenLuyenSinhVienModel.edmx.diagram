@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bf28a4cb189e4bb6942d1bd2c483b5ce" Name="Diagram1" ZoomLevel="48">
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.DANHGIARENLUYEN" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.DANHGIARENLUYENLOPTRUONG" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.DANHGIARENLUYENTHAYCO" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.GIAOVIEN" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.HOCKY" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.KHOA" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.LOP" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.NAMHOC" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.Quyen" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.SINHVIEN" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.SUKIEN" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.TAIKHOAN" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyDiemRenLuyenModel.THAMGIASUKIEN" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

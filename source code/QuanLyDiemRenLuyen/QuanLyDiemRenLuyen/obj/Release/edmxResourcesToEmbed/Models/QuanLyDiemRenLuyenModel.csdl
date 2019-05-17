@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QL_DIEMRENLUYENModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="QL_DIEMRENLUYENEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_LayDiemThamGiaHD" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_LayDiemThamGiaHD_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="hocki" Mode="In" Type="Int32" />
+      <Parameter Name="nam" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DanhGiaDiemRenLuyen">
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ThemDanhGiaDiemRenLuyen">
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_laydiemsk" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_laydiemsk_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_test" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_test_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_test1" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_test_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_laydiemsukien" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_laydiemsukien_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_laydiemsukien1" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_laydiemsukien_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_cho11" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_cho11_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DanhSachSuKien" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_DanhSachSuKien_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sd_sinhviendanhgia" ReturnType="Collection(QL_DIEMRENLUYENModel.sd_sinhviendanhgia_Result)">
+      <Parameter Name="malop" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sd_sinhviendanhgia1">
+      <Parameter Name="malop" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="DANHGIARENLUYENs" EntityType="QL_DIEMRENLUYENModel.DANHGIARENLUYEN" />
+    <EntitySet Name="GIAOVIENs" EntityType="QL_DIEMRENLUYENModel.GIAOVIEN" />
+    <EntitySet Name="HOCKies" EntityType="QL_DIEMRENLUYENModel.HOCKY" />
+    <EntitySet Name="KHOAs" EntityType="QL_DIEMRENLUYENModel.KHOA" />
+    <EntitySet Name="LOPs" EntityType="QL_DIEMRENLUYENModel.LOP" />
+    <EntitySet Name="NAMHOCs" EntityType="QL_DIEMRENLUYENModel.NAMHOC" />
+    <EntitySet Name="Quyens" EntityType="QL_DIEMRENLUYENModel.Quyen" />
+    <EntitySet Name="SINHVIENs" EntityType="QL_DIEMRENLUYENModel.SINHVIEN" />
+    <EntitySet Name="SUKIENs" EntityType="QL_DIEMRENLUYENModel.SUKIEN" />
+    <EntitySet Name="sysdiagrams" EntityType="QL_DIEMRENLUYENModel.sysdiagram" />
+    <EntitySet Name="TAIKHOANs" EntityType="QL_DIEMRENLUYENModel.TAIKHOAN" />
+    <EntitySet Name="THAMGIASUKIENs" EntityType="QL_DIEMRENLUYENModel.THAMGIASUKIEN" />
+    <FunctionImport Name="sp_ThemDanhGiaDiemRenLuyenLT">
+      <Parameter Name="iddgsv" Mode="In" Type="Int32" />
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="DANHGIARENLUYENLOPTRUONGs" EntityType="QL_DIEMRENLUYENModel.DANHGIARENLUYENLOPTRUONG" />
+    <EntitySet Name="DANHGIARENLUYENTHAYCOes" EntityType="QL_DIEMRENLUYENModel.DANHGIARENLUYENTHAYCO" />
+    <FunctionImport Name="ds_sinhviendanhgiaGV" ReturnType="Collection(QL_DIEMRENLUYENModel.ds_sinhviendanhgiaGV_Result)">
+      <Parameter Name="malop" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ds_sinhviendanhgiaGV1">
+      <Parameter Name="malop" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ds_themdanhgiadiemrenluyen1">
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+      <Parameter Name="id" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ds_themdanhgiadiemrenluyen11">
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+      <Parameter Name="id" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="hienthidsdgsvdglt" ReturnType="Collection(QL_DIEMRENLUYENModel.hienthidsdgsvdglt_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_laysk" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_laysk_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="hienthidsdgsvdglt1">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ThemDanhGiaDiemRenLuyenGV">
+      <Parameter Name="iddglt" Mode="In" Type="Int32" />
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="magv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ThemDanhGiaDiemRenLuyenGV1">
+      <Parameter Name="iddglt" Mode="In" Type="Int32" />
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="magv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+      <Parameter Name="id" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ThemDanhGiaDiemRenLuyenGV11">
+      <Parameter Name="iddglt" Mode="In" Type="Int32" />
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="magv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+      <Parameter Name="id" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ThemDanhGiaDiemRenLuyenLT1">
+      <Parameter Name="iddgsv" Mode="In" Type="Int32" />
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+      <Parameter Name="id" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="dk_locsinhviendanhgia" ReturnType="Collection(QL_DIEMRENLUYENModel.dk_locsinhviendanhgia_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="dk_locsinhviendanhgiagv" ReturnType="Collection(QL_DIEMRENLUYENModel.dk_locsinhviendanhgiagv_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="dk_locsinhviendanhgialt" ReturnType="Collection(QL_DIEMRENLUYENModel.dk_locsinhviendanhgialt_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="dsdanhgiadiemrenluyenGV" ReturnType="Collection(QL_DIEMRENLUYENModel.dsdanhgiadiemrenluyenGV_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="dsdanhgiadiemrenluyenGV1" ReturnType="Collection(QL_DIEMRENLUYENModel.dsdanhgiadiemrenluyenGV1_Result)" />
+    <FunctionImport Name="sp_updateDanhGiaDiemRenLuyenGV1">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="dihocdaydu" Mode="In" Type="Int32" />
+      <Parameter Name="kqhoctap" Mode="In" Type="Int32" />
+      <Parameter Name="cokhanvuotkho" Mode="In" Type="Int32" />
+      <Parameter Name="nckh" Mode="In" Type="Int32" />
+      <Parameter Name="tinhoc" Mode="In" Type="Int32" />
+      <Parameter Name="ngoaingu" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi1" Mode="In" Type="Int32" />
+      <Parameter Name="khongvipham" Mode="In" Type="Int32" />
+      <Parameter Name="giuginanninh" Mode="In" Type="Int32" />
+      <Parameter Name="giuginvesinh" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi2" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiaHD" Mode="In" Type="Int32" />
+      <Parameter Name="llcanbomon" Mode="In" Type="Int32" />
+      <Parameter Name="llcapkhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktdoankhoa" Mode="In" Type="Int32" />
+      <Parameter Name="ktcaptruong" Mode="In" Type="Int32" />
+      <Parameter Name="ktcapcaohon" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi3" Mode="In" Type="Int32" />
+      <Parameter Name="khongviphamplnn" Mode="In" Type="Int32" />
+      <Parameter Name="cotinhthangiupdo" Mode="In" Type="Int32" />
+      <Parameter Name="thamgiadoi" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi4" Mode="In" Type="Int32" />
+      <Parameter Name="loptruong" Mode="In" Type="Int32" />
+      <Parameter Name="cansulop" Mode="In" Type="Int32" />
+      <Parameter Name="thanhtichdacbiet" Mode="In" Type="Int32" />
+      <Parameter Name="tongtieuchi5" Mode="In" Type="Int32" />
+      <Parameter Name="tongdiem" Mode="In" Type="Int32" />
+      <Parameter Name="xeploai" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_xemdiemrenluyen1" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_xemdiemrenluyen1_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="phanbiet" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_xemdiemrenluyen2" ReturnType="Collection(QL_DIEMRENLUYENModel.sp_xemdiemrenluyen2_Result)">
+      <Parameter Name="masv" Mode="In" Type="String" />
+      <Parameter Name="phanbiet" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_LayDiemThamGiaHD_Result">
+    <Property Type="String" Name="FK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="PK_sHockyID" Nullable="false" />
+    <Property Type="Int32" Name="PK_sNamHoc" Nullable="false" />
+    <Property Type="Int32" Name="TONGDIEM" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_laydiemsk_Result">
+    <Property Type="String" Name="FK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="PK_sHockyID" Nullable="false" />
+    <Property Type="Int32" Name="PK_sNamHoc" Nullable="false" />
+    <Property Type="Int32" Name="TONGDIEM" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_test_Result">
+    <Property Type="String" Name="MASV" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="HOCKY" Nullable="false" />
+    <Property Type="Int32" Name="NAM" Nullable="true" />
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_laydiemsukien_Result">
+    <Property Type="String" Name="MASV" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="HOCKY" Nullable="false" />
+    <Property Type="Int32" Name="NAM" Nullable="true" />
+    <Property Type="Int32" Name="TONGDIEM" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_cho11_Result">
+    <Property Type="String" Name="MASV" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="HOCKY" Nullable="false" />
+    <Property Type="Int32" Name="NAM" Nullable="true" />
+    <Property Type="Int32" Name="TONGDIEM" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_DanhSachSuKien_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="TENSK" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="DIEM" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sd_sinhviendanhgia_Result">
+    <Property Type="String" Name="PK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="sTenSV" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="PK_sMaLopID" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="DANHGIARENLUYEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FK_sMaSVID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PK_sNamHoc" Type="Int32" Nullable="false" />
+    <Property Name="PK_sHockyID" Type="Int32" Nullable="false" />
+    <Property Name="DiHocDayDu" Type="Int32" />
+    <Property Name="KQHocTap" Type="Int32" />
+    <Property Name="CoGangVuotKho" Type="Int32" />
+    <Property Name="NCKH" Type="Int32" />
+    <Property Name="TinHoc" Type="Int32" />
+    <Property Name="NgoaiNgu" Type="Int32" />
+    <Property Name="TongTieuChi1" Type="Int32" />
+    <Property Name="KhongViPham" Type="Int32" />
+    <Property Name="GiuGinAnNinh" Type="Int32" />
+    <Property Name="GiuVeSinh" Type="Int32" />
+    <Property Name="TongTieuChi2" Type="Int32" />
+    <Property Name="ThamGiaHD" Type="Int32" />
+    <Property Name="LLCapboMon" Type="Int32" />
+    <Property Name="LLCapKhoa" Type="Int32" />
+    <Property Name="KTDoanKhoa" Type="Int32" />
+    <Property Name="KTCapTruong" Type="Int32" />
+    <Property Name="KTCapCaoHon" Type="Int32" />
+    <Property Name="TongTieuChi3" Type="Int32" />
+    <Property Name="KhongViPhamPLNN" Type="Int32" />
+    <Property Name="CoTinhThanGiupDo" Type="Int32" />
+    <Property Name="ThamGiaDoi" Type="Int32" />
+    <Property Name="TongTieuChi4" Type="Int32" />
+    <Property Name="LopTruong" Type="Int32" />
+    <Property Name="CanSuLop" Type="Int32" />
+    <Property Name="CacThanhTichDacBiet" Type="Int32" />
+    <Property Name="TongTieuChi5" Type="Int32" />
+    <Property Name="iTongdiem" Type="Int32" />
+    <Property Name="sXeploai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="dNgaylap" Type="DateTime" Precision="0" />
+    <Property Name="TrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GIAOVIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PK_sMaGVID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sTenGV" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dNgaysinh" Type="DateTime" Precision="0" />
+    <Property Name="sGioitinh" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="sQuequan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sChucvu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FK_sMaKhoaID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FK_sMaLopID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="HOCKY">
+    <Key>
+      <PropertyRef Name="hocky1" />
+    </Key>
+    <Property Name="hocky1" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="KHOA">
+    <Key>
+      <PropertyRef Name="PK_sMaKhoaID" />
+    </Key>
+    <Property Name="PK_sMaKhoaID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sTenKhoa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sChunhiemkhoa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sDiachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sDienthoai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LOP">
+    <Key>
+      <PropertyRef Name="PK_sMaLopID" />
+    </Key>
+    <Property Name="PK_sMaLopID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sTenLop" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sNambatdau" Type="Int32" />
+    <Property Name="sNamketthuc" Type="Int32" />
+    <Property Name="sCovanhoctap" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="NAMHOC">
+    <Key>
+      <PropertyRef Name="namhoc1" />
+    </Key>
+    <Property Name="namhoc1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Quyen">
+    <Key>
+      <PropertyRef Name="IDQuyen" />
+    </Key>
+    <Property Name="IDQuyen" Type="Int32" Nullable="false" />
+    <Property Name="TenQuyen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SINHVIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PK_sMaSVID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sTenSV" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dNgaysinh" Type="DateTime" Precision="0" />
+    <Property Name="sChucvu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sGioitinh" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="sQuequan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FK_sMaLopID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SUKIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENSK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DIADIEM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="THOIGIAN" Type="DateTime" Precision="0" />
+    <Property Name="DIEM" Type="Int32" />
+    <Property Name="TINHTRANG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GHICHU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TAIKHOAN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDQuyen" Type="Int32" />
+  </EntityType>
+  <EntityType Name="THAMGIASUKIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MASV" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MASK" Type="Int32" Nullable="false" />
+    <Property Name="THOIGIAN" Type="DateTime" Precision="0" />
+    <Property Name="GHICHU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DANHGIARENLUYENLOPTRUONG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDDGSV" Type="Int32" Nullable="false" />
+    <Property Name="FK_sMaSVID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PK_sNamHoc" Type="Int32" />
+    <Property Name="PK_sHockyID" Type="Int32" />
+    <Property Name="DiHocDayDu" Type="Int32" />
+    <Property Name="KQHocTap" Type="Int32" />
+    <Property Name="CoGangVuotKho" Type="Int32" />
+    <Property Name="NCKH" Type="Int32" />
+    <Property Name="TinHoc" Type="Int32" />
+    <Property Name="NgoaiNgu" Type="Int32" />
+    <Property Name="TongTieuChi1" Type="Int32" />
+    <Property Name="KhongViPham" Type="Int32" />
+    <Property Name="GiuGinAnNinh" Type="Int32" />
+    <Property Name="GiuVeSinh" Type="Int32" />
+    <Property Name="TongTieuChi2" Type="Int32" />
+    <Property Name="ThamGiaHD" Type="Int32" />
+    <Property Name="LLCapboMon" Type="Int32" />
+    <Property Name="LLCapKhoa" Type="Int32" />
+    <Property Name="KTDoanKhoa" Type="Int32" />
+    <Property Name="KTCapTruong" Type="Int32" />
+    <Property Name="KTCapCaoHon" Type="Int32" />
+    <Property Name="TongTieuChi3" Type="Int32" />
+    <Property Name="KhongViPhamPLNN" Type="Int32" />
+    <Property Name="CoTinhThanGiupDo" Type="Int32" />
+    <Property Name="ThamGiaDoi" Type="Int32" />
+    <Property Name="TongTieuChi4" Type="Int32" />
+    <Property Name="LopTruong" Type="Int32" />
+    <Property Name="CanSuLop" Type="Int32" />
+    <Property Name="CacThanhTichDacBiet" Type="Int32" />
+    <Property Name="TongTieuChi5" Type="Int32" />
+    <Property Name="iTongdiem" Type="Int32" />
+    <Property Name="sXeploai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="dNgaylap" Type="DateTime" Precision="0" />
+    <Property Name="Ghichu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DANHGIARENLUYENTHAYCO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDLopTruong" Type="Int32" Nullable="false" />
+    <Property Name="PK_sNamHoc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PK_sHockyID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="FK_sMaSVID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PK_sMaGVID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DiHocDayDu" Type="Int32" />
+    <Property Name="KQHocTap" Type="Int32" />
+    <Property Name="CoGangVuotKho" Type="Int32" />
+    <Property Name="NCKH" Type="Int32" />
+    <Property Name="TinHoc" Type="Int32" />
+    <Property Name="NgoaiNgu" Type="Int32" />
+    <Property Name="TongTieuChi1" Type="Int32" />
+    <Property Name="KhongViPham" Type="Int32" />
+    <Property Name="GiuGinAnNinh" Type="Int32" />
+    <Property Name="GiuVeSinh" Type="Int32" />
+    <Property Name="TongTieuChi2" Type="Int32" />
+    <Property Name="ThamGiaHD" Type="Int32" />
+    <Property Name="LLCapboMon" Type="Int32" />
+    <Property Name="LLCapKhoa" Type="Int32" />
+    <Property Name="KTDoanKhoa" Type="Int32" />
+    <Property Name="KTCapTruong" Type="Int32" />
+    <Property Name="KTCapCaoHon" Type="Int32" />
+    <Property Name="TongTieuChi3" Type="Int32" />
+    <Property Name="KhongViPhamPLNN" Type="Int32" />
+    <Property Name="CoTinhThanGiupDo" Type="Int32" />
+    <Property Name="ThamGiaDoi" Type="Int32" />
+    <Property Name="TongTieuChi4" Type="Int32" />
+    <Property Name="LopTruong" Type="Int32" />
+    <Property Name="CanSuLop" Type="Int32" />
+    <Property Name="CacThanhTichDacBiet" Type="Int32" />
+    <Property Name="TongTieuChi5" Type="Int32" />
+    <Property Name="iTongdiem" Type="Int32" />
+    <Property Name="sXeploai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="dNgaylap" Type="DateTime" Precision="0" />
+    <Property Name="Ghichu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="ds_sinhviendanhgiaGV_Result">
+    <Property Type="String" Name="PK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="sTenSV" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="PK_sMaLopID" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="hienthidsdgsvdglt_Result">
+    <Property Type="String" Name="MSV" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="NH" Nullable="true" />
+    <Property Type="Int32" Name="HK" Nullable="true" />
+    <Property Type="Int32" Name="DHDD" Nullable="true" />
+    <Property Type="Int32" Name="KQHT" Nullable="true" />
+    <Property Type="Int32" Name="CGVK" Nullable="true" />
+    <Property Type="Int32" Name="NCKH" Nullable="true" />
+    <Property Type="Int32" Name="TH" Nullable="true" />
+    <Property Type="Int32" Name="NN" Nullable="true" />
+    <Property Type="Int32" Name="TTC1" Nullable="true" />
+    <Property Type="Int32" Name="KVP" Nullable="true" />
+    <Property Type="Int32" Name="GGAN" Nullable="true" />
+    <Property Type="Int32" Name="GVS" Nullable="true" />
+    <Property Type="Int32" Name="TTC2" Nullable="true" />
+    <Property Type="Int32" Name="TGHD" Nullable="true" />
+    <Property Type="Int32" Name="LLCBM" Nullable="true" />
+    <Property Type="Int32" Name="LLCK" Nullable="true" />
+    <Property Type="Int32" Name="KTCK" Nullable="true" />
+    <Property Type="Int32" Name="KTCT" Nullable="true" />
+    <Property Type="Int32" Name="KTCCH" Nullable="true" />
+    <Property Type="Int32" Name="TTC3" Nullable="true" />
+    <Property Type="Int32" Name="KVPPLNN" Nullable="true" />
+    <Property Type="Int32" Name="CTTGD" Nullable="true" />
+    <Property Type="Int32" Name="TGD" Nullable="true" />
+    <Property Type="Int32" Name="TTC4" Nullable="true" />
+    <Property Type="Int32" Name="LT" Nullable="true" />
+    <Property Type="Int32" Name="CSL" Nullable="true" />
+    <Property Type="Int32" Name="CTTDB" Nullable="true" />
+    <Property Type="Int32" Name="TTC5" Nullable="true" />
+    <Property Type="Int32" Name="ITD" Nullable="true" />
+    <Property Type="String" Name="XL" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DNL" Nullable="true" />
+    <Property Type="Int32" Name="BP" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_laysk_Result">
+    <Property Type="String" Name="FK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="PK_sHockyID" Nullable="false" />
+    <Property Type="Int32" Name="PK_sNamHoc" Nullable="false" />
+    <Property Type="Int32" Name="TONGDIEM" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="dk_locsinhviendanhgia_Result">
+    <Property Type="String" Name="FK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="PK_sNamHoc" Nullable="false" />
+    <Property Type="Int32" Name="PK_sHockyID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="dk_locsinhviendanhgiagv_Result">
+    <Property Type="String" Name="FK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PK_sNamHoc" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PK_sHockyID" Nullable="true" MaxLength="5" />
+  </ComplexType>
+  <ComplexType Name="dk_locsinhviendanhgialt_Result">
+    <Property Type="String" Name="FK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="PK_sNamHoc" Nullable="true" />
+    <Property Type="Int32" Name="PK_sHockyID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="dsdanhgiadiemrenluyenGV_Result">
+    <Property Type="String" Name="PK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="sTenSV" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="dsdanhgiadiemrenluyenGV1_Result">
+    <Property Type="String" Name="PK_sMaSVID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="sTenSV" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_xemdiemrenluyen1_Result">
+    <Property Type="String" Name="MSV" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="NH" Nullable="true" />
+    <Property Type="Int32" Name="HK" Nullable="true" />
+    <Property Type="Int32" Name="DHDD" Nullable="true" />
+    <Property Type="Int32" Name="KQHT" Nullable="true" />
+    <Property Type="Int32" Name="CGVK" Nullable="true" />
+    <Property Type="Int32" Name="NCKH" Nullable="true" />
+    <Property Type="Int32" Name="TH" Nullable="true" />
+    <Property Type="Int32" Name="NN" Nullable="true" />
+    <Property Type="Int32" Name="TTC1" Nullable="true" />
+    <Property Type="Int32" Name="KVP" Nullable="true" />
+    <Property Type="Int32" Name="GGAN" Nullable="true" />
+    <Property Type="Int32" Name="GVS" Nullable="true" />
+    <Property Type="Int32" Name="TTC2" Nullable="true" />
+    <Property Type="Int32" Name="TGHD" Nullable="true" />
+    <Property Type="Int32" Name="LLCBM" Nullable="true" />
+    <Property Type="Int32" Name="LLCK" Nullable="true" />
+    <Property Type="Int32" Name="KTCK" Nullable="true" />
+    <Property Type="Int32" Name="KTCT" Nullable="true" />
+    <Property Type="Int32" Name="KTCCH" Nullable="true" />
+    <Property Type="Int32" Name="TTC3" Nullable="true" />
+    <Property Type="Int32" Name="KVPPLNN" Nullable="true" />
+    <Property Type="Int32" Name="CTTGD" Nullable="true" />
+    <Property Type="Int32" Name="TGD" Nullable="true" />
+    <Property Type="Int32" Name="TTC4" Nullable="true" />
+    <Property Type="Int32" Name="LT" Nullable="true" />
+    <Property Type="Int32" Name="CSL" Nullable="true" />
+    <Property Type="Int32" Name="CTTDB" Nullable="true" />
+    <Property Type="Int32" Name="TTC5" Nullable="true" />
+    <Property Type="Int32" Name="ITD" Nullable="true" />
+    <Property Type="String" Name="XL" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DNL" Nullable="true" />
+    <Property Type="Int32" Name="BP" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_xemdiemrenluyen2_Result">
+    <Property Type="String" Name="MSV" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="NH" Nullable="true" />
+    <Property Type="Int32" Name="HK" Nullable="true" />
+    <Property Type="Int32" Name="DHDD" Nullable="true" />
+    <Property Type="Int32" Name="KQHT" Nullable="true" />
+    <Property Type="Int32" Name="CGVK" Nullable="true" />
+    <Property Type="Int32" Name="NCKH" Nullable="true" />
+    <Property Type="Int32" Name="TH" Nullable="true" />
+    <Property Type="Int32" Name="NN" Nullable="true" />
+    <Property Type="Int32" Name="TTC1" Nullable="true" />
+    <Property Type="Int32" Name="KVP" Nullable="true" />
+    <Property Type="Int32" Name="GGAN" Nullable="true" />
+    <Property Type="Int32" Name="GVS" Nullable="true" />
+    <Property Type="Int32" Name="TTC2" Nullable="true" />
+    <Property Type="Int32" Name="TGHD" Nullable="true" />
+    <Property Type="Int32" Name="LLCBM" Nullable="true" />
+    <Property Type="Int32" Name="LLCK" Nullable="true" />
+    <Property Type="Int32" Name="KTCK" Nullable="true" />
+    <Property Type="Int32" Name="KTCT" Nullable="true" />
+    <Property Type="Int32" Name="KTCCH" Nullable="true" />
+    <Property Type="Int32" Name="TTC3" Nullable="true" />
+    <Property Type="Int32" Name="KVPPLNN" Nullable="true" />
+    <Property Type="Int32" Name="CTTGD" Nullable="true" />
+    <Property Type="Int32" Name="TGD" Nullable="true" />
+    <Property Type="Int32" Name="TTC4" Nullable="true" />
+    <Property Type="Int32" Name="LT" Nullable="true" />
+    <Property Type="Int32" Name="CSL" Nullable="true" />
+    <Property Type="Int32" Name="CTTDB" Nullable="true" />
+    <Property Type="Int32" Name="TTC5" Nullable="true" />
+    <Property Type="Int32" Name="ITD" Nullable="true" />
+    <Property Type="String" Name="XL" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DNL" Nullable="true" />
+    <Property Type="Int32" Name="BP" Nullable="false" />
+  </ComplexType>
+</Schema>

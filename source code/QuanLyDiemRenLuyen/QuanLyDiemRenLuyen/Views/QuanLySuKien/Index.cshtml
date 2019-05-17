@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Thêm Mới Sự Kiện";
+}
+
+<div class="content">
+    <div class="container body-content">
+        <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" href="#firstTab">Xem tất cả</a></li>
+            <li class="active"><a data-toggle="tab" href="#secondTab">Thếm mới</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="firstTab" class="tab-pane fade in">@Html.Action("ViewAll")</div>
+            <div id="secondTab" class="tab-pane fade in active">@Html.Action("AddOrEdit")</div>
+        </div>
+    </div>
+    </div>
+
+    <link href="~/Content/jquery.dataTables.min.css" rel="stylesheet" />
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script src="~/Content/jquery.dataTables.min.js"></script>
+
+
+        <script>
+            function activatejQueryTable() {
+                debugger;
+                $("#employeeTable").DataTable();
+            }
+
+            $(function () {
+                activatejQueryTable();
+            });
+
+        </script>
+    }

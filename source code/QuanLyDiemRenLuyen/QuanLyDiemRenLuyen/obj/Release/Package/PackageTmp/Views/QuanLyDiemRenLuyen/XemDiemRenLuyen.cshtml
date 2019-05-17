@@ -1,0 +1,319 @@
+﻿@model  List<sp_xemdiemrenluyen2_Result>
+@using QuanLyDiemRenLuyen.Models;
+@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Shared/_LayoutNguoiDung.cshtml";
+}
+
+<style>
+    .table {
+        width: 90%;
+        margin-left: 55px;
+        text-align: center;
+    }
+
+    .table, th, td {
+        border: 1px solid black;
+    }
+
+        .table th {
+            background-color: #0099FF;
+            color: white;
+        }
+
+    .a {
+        font-weight:bold;
+        width: 100%;
+        margin-top: 20px;
+       margin-left:55px;
+    }
+</style>
+<h4 class="a">Sinh Viên Tự Đánh Giá</h4>
+<table class="table">
+
+    <tr>
+        <th>
+            Mã sinh viên
+        </th>
+
+        <th>
+            Năm Học
+        </th>
+        <th>
+            Học kì
+        </th>
+        <th>
+            Tiêu Chí 1
+        </th>
+        <th>
+           Tiêu Chí 2
+        </th>
+        <th>
+            Tiêu Chí 3
+        </th>
+        <th>
+            Tiêu Chí 4
+        </th>
+        <th>
+            Tiêu Chí 5
+        </th>
+        
+        <th>
+            Tổng Điêm
+        </th>
+        <th>
+            Xếp Loại
+        </th>
+        <th>
+            Ngày Lập
+        </th>
+
+    </tr>
+    <tr>
+        @if (ViewBag.SV_SV != null)
+        {
+            foreach (var item in ViewBag.SV_SV)
+            {
+
+
+                <td>
+                    @item.MSV
+                </td>
+                <td>
+                    @item.NH
+                </td>
+                <td>
+                    @item.HK
+                </td>
+                <td>
+                    @item.TTC1
+                </td>
+
+                <td>
+                    @item.TTC2
+                </td>
+                <td>
+                    @item.TTC3
+                </td>
+                <td>
+                    @item.TTC4
+                </td>
+
+                <td>
+                    @item.TTC5
+                </td>
+                <td>
+                    @item.ITD
+                </td>
+                <td>
+                    @item.XL
+                </td>
+                <td>
+                    @item.DNL
+                </td>
+
+            }
+        }
+        else
+        {
+            <td colspan="11">
+                chưa có  dữu liệu...
+            </td>
+        }
+    </tr>
+</table>
+<br/>
+<h4 class="a">Lớp Trưởng Chấm Điểm</h4>
+<table class="table">
+
+    <tr>
+        <th>
+            Mã sinh viên
+        </th>
+
+        <th>
+            Năm Học
+        </th>
+        <th>
+            Học kì
+        </th>
+        <th>
+            Tiêu Chí 1
+        </th>
+        <th>
+            Tiêu Chí 2
+        </th>
+        <th>
+            Tiêu Chí 3
+        </th>
+        <th>
+            Tiêu Chí 4
+        </th>
+        <th>
+            Tiêu Chí 5
+        </th>
+
+        <th>
+            Tổng Điêm
+        </th>
+        <th>
+            Xếp Loại
+        </th>
+        <th>
+            Ngày Lập
+        </th>
+
+    </tr>
+
+    <tr>
+        @if (ViewBag.SV_LT != null)
+        {
+            foreach (var item in ViewBag.SV_LT)
+            {
+
+
+                <td>
+                    @item.MSV
+                </td>
+                <td>
+                    @item.NH
+                </td>
+                <td>
+                    @item.HK
+                </td>
+                <td>
+                    @item.TTC1
+                </td>
+
+                <td>
+                    @item.TTC2
+                </td>
+                <td>
+                    @item.TTC3
+                </td>
+                <td>
+                    @item.TTC4
+                </td>
+
+                <td>
+                    @item.TTC5
+                </td>
+                <td>
+                    @item.ITD
+                </td>
+                <td>
+                    @item.XL
+                </td>
+                <td>
+                    @item.DNL
+                </td>
+
+            }
+        }
+        else
+        {
+            <td colspan="11">
+                chưa có  dữu liệu...
+            </td>
+        }
+    </tr>
+
+</table>
+
+<br />
+<h4 class="a">Giáo Viên Chấm Điểm</h4>
+<table class="table">
+
+    <tr>
+        <th>
+            Mã sinh viên
+        </th>
+
+        <th>
+            Năm Học
+        </th>
+        <th>
+            Học kì
+        </th>
+        <th>
+            Tiêu Chí 1
+        </th>
+        <th>
+            Tiêu Chí 2
+        </th>
+        <th>
+            Tiêu Chí 3
+        </th>
+        <th>
+            Tiêu Chí 4
+        </th>
+        <th>
+            Tiêu Chí 5
+        </th>
+
+        <th>
+            Tổng Điêm
+        </th>
+        <th>
+            Xếp Loại
+        </th>
+        <th>
+            Ngày Lập
+        </th>
+
+    </tr>
+
+    <tr>
+        @if (ViewBag.SV_GV != null)
+        {
+            foreach (var item in ViewBag.SV_GV)
+            {
+
+
+                <td>
+                    @item.MSV
+                </td>
+                <td>
+                    @item.NH
+                </td>
+                <td>
+                    @item.HK
+                </td>
+                <td>
+                    @item.TTC1
+                </td>
+
+                <td>
+                    @item.TTC2
+                </td>
+                <td>
+                    @item.TTC3
+                </td>
+                <td>
+                    @item.TTC4
+                </td>
+
+                <td>
+                    @item.TTC5
+                </td>
+                <td>
+                    @item.ITD
+                </td>
+                <td>
+                    @item.XL
+                </td>
+                <td>
+                    @item.DNL
+                </td>
+
+            }
+        }
+        else
+        {
+            <td colspan="11">
+                chưa có  dữu liệu...
+            </td>
+        }
+    </tr>
+
+</table>

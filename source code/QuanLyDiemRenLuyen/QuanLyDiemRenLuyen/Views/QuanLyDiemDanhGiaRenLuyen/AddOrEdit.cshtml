@@ -1,0 +1,304 @@
+﻿@model QuanLyDiemRenLuyen.Models.DANHGIARENLUYEN
+
+@{
+    ViewBag.Title = "AddOrEdit";
+    Layout = null;
+}
+
+
+
+@using (Html.BeginForm("AddOrEdit", "QuanLyDiemDanhGiaRenLuyen", FormMethod.Post, new { enctype = "multipart/form-data", onSubmit = "return jQueryAjaxPost(this);", data_restUrl = Url.Action("AddOrEdit", "QuanLyDiemDanhGiaRenLuyen", new { id = 0 }) }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.ID)
+
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label style="text-align: left; width:200px" class="control-label col-md-2">Mã sinh viên</label>
+
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.FK_sMaSVID, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FK_sMaSVID)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:200px" class="control-label col-md-2">Năm học</label>
+
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.PK_sNamHoc, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PK_sNamHoc)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:200px" class="control-label col-md-2">Học Kì</label>
+
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.PK_sHockyID, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PK_sHockyID)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Đi Học Đầy Đủ </label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.DiHocDayDu, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DiHocDayDu)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">KQ học Tập</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.KQHocTap, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.KQHocTap)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Cố Gắng Vượt Khó</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.CoGangVuotKho, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CoGangVuotKho)
+                    </div>
+                </div>
+
+
+
+              
+                <div class="form-group">
+                    <label style="text-align: left; width:200px" class="control-label col-md-2">NCKH</label>
+
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.NCKH, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.NCKH)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Tin Học</label>
+                    <div style="margin-left:150px; margin-top:-25px; " class="col-md-10">
+                        @Html.EditorFor(model => model.TinHoc, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TinHoc)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Ngoại ngữ</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.NgoaiNgu, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValueFor(model => model.NgoaiNgu)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Tổng tiêu chí 1</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.TongTieuChi1, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TongTieuChi1)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Không vi phạm</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.KhongViPham, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.KhongViPham)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Giữ gìn an ninh</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.GiuGinAnNinh, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.GiuGinAnNinh)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:200px" class="control-label col-md-2">Giữ gìn vệ sinh</label>
+
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.GiuVeSinh, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.GiuVeSinh)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Tổng tiêu chí 2</label>
+                    <div style="margin-left:150px; margin-top:-25px; " class="col-md-10">
+                        @Html.EditorFor(model => model.TongTieuChi2, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TongTieuChi2)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Tham gia hoạt động </label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.ThamGiaHD, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValueFor(model => model.ThamGiaHD)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">LLCapboMon</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.LLCapboMon, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.LLCapboMon)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">LLCapKhoa</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.LLCapKhoa, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.LLCapKhoa)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Khen thưởng đoàn khoa</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.KTDoanKhoa, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.KTDoanKhoa)
+                    </div>
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <label style="text-align: left; width:200px" class="control-label col-md-2">Khen thưởng cấp trường </label>
+
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.KTCapTruong, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.KTCapTruong)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Khen thưởng cấp cao hơn</label>
+                    <div style="margin-left:150px; margin-top:-25px; " class="col-md-10">
+                        @Html.EditorFor(model => model.KTCapCaoHon, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.KTCapCaoHon)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Tổng Tiêu Chí 3</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.TongTieuChi3, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValueFor(model => model.TongTieuChi3)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">KhongViPhamPLNN</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.KhongViPhamPLNN, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.KhongViPhamPLNN)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">CoTinhThanGiupDo</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.CoTinhThanGiupDo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CoTinhThanGiupDo)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Tham Gia Đội </label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.ThamGiaDoi, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ThamGiaDoi)
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label style="text-align: left; width:200px" class="control-label col-md-2">Tổng tiêu chí 4 </label>
+
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.TongTieuChi4, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TongTieuChi4)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Lớp Trưởng</label>
+                    <div style="margin-left:150px; margin-top:-25px; " class="col-md-10">
+                        @Html.EditorFor(model => model.LopTruong, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.LopTruong)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Cán Sự lớp</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.CanSuLop, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValueFor(model => model.CanSuLop)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Các thành tích đặc biệt</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.CacThanhTichDacBiet, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CacThanhTichDacBiet)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Tổng tiêu chí 5</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.TongTieuChi5, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TongTieuChi5)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Tổng Điểm </label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.iTongdiem, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.iTongdiem)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">Xếp Loại</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.sXeploai, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.sXeploai)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="text-align: left; width:115px;" class="control-label col-md-2">ngày lập</label>
+                    <div style="margin-left:150px; margin-top:-25px;" class="col-md-10">
+                        @Html.EditorFor(model => model.dNgaylap, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValueFor(model => model.dNgaylap, "{0:dd/MM/yyyy}")
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Xác nhận " class="btn btn-default" />
+                        @if (Model.ID != 0)
+                        {
+                            <a class="btn btn-success" onclick="refreshAddNewTab('@Url.Action("AddOrEdit","QuanLySuKien",new{id=0})',false)"><i class="fa fa-plus"></i> Thêm mới</a>
+                        }
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+
+
+
+
+
+
+

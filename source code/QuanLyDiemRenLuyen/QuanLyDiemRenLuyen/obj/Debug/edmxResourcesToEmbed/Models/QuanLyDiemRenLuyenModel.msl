@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QL_DIEMRENLUYENModelStoreContainer" CdmEntityContainer="QL_DIEMRENLUYENEntities">
+    <FunctionImportMapping FunctionImportName="sp_LayDiemThamGiaHD" FunctionName="QL_DIEMRENLUYENModel.Store.sp_LayDiemThamGiaHD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_LayDiemThamGiaHD_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyen" FunctionName="QL_DIEMRENLUYENModel.Store.sp_ThemDanhGiaDiemRenLuyen" />
+    <FunctionImportMapping FunctionImportName="sp_laydiemsk" FunctionName="QL_DIEMRENLUYENModel.Store.sp_laydiemsk">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_laydiemsk_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_test" FunctionName="QL_DIEMRENLUYENModel.Store.sp_test">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_test_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_test1" FunctionName="QL_DIEMRENLUYENModel.Store.sp_test">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_test_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_laydiemsukien" FunctionName="QL_DIEMRENLUYENModel.Store.sp_laydiemsukien">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_laydiemsukien_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_laydiemsukien1" FunctionName="QL_DIEMRENLUYENModel.Store.sp_laydiemsukien">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_laydiemsukien_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_cho11" FunctionName="QL_DIEMRENLUYENModel.Store.sp_cho11">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_cho11_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_DanhSachSuKien" FunctionName="QL_DIEMRENLUYENModel.Store.sp_DanhSachSuKien">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_DanhSachSuKien_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TENSK" ColumnName="TENSK" />
+          <ScalarProperty Name="DIEM" ColumnName="DIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sd_sinhviendanhgia" FunctionName="QL_DIEMRENLUYENModel.Store.sd_sinhviendanhgia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sd_sinhviendanhgia_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaLopID" ColumnName="PK_sMaLopID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sd_sinhviendanhgia1" FunctionName="QL_DIEMRENLUYENModel.Store.sd_sinhviendanhgia" />
+    <EntitySetMapping Name="DANHGIARENLUYENs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.DANHGIARENLUYEN">
+        <MappingFragment StoreEntitySet="DANHGIARENLUYEN">
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="dNgaylap" ColumnName="dNgaylap" />
+          <ScalarProperty Name="sXeploai" ColumnName="sXeploai" />
+          <ScalarProperty Name="iTongdiem" ColumnName="iTongdiem" />
+          <ScalarProperty Name="TongTieuChi5" ColumnName="TongTieuChi5" />
+          <ScalarProperty Name="CacThanhTichDacBiet" ColumnName="CacThanhTichDacBiet" />
+          <ScalarProperty Name="CanSuLop" ColumnName="CanSuLop" />
+          <ScalarProperty Name="LopTruong" ColumnName="LopTruong" />
+          <ScalarProperty Name="TongTieuChi4" ColumnName="TongTieuChi4" />
+          <ScalarProperty Name="ThamGiaDoi" ColumnName="ThamGiaDoi" />
+          <ScalarProperty Name="CoTinhThanGiupDo" ColumnName="CoTinhThanGiupDo" />
+          <ScalarProperty Name="KhongViPhamPLNN" ColumnName="KhongViPhamPLNN" />
+          <ScalarProperty Name="TongTieuChi3" ColumnName="TongTieuChi3" />
+          <ScalarProperty Name="KTCapCaoHon" ColumnName="KTCapCaoHon" />
+          <ScalarProperty Name="KTCapTruong" ColumnName="KTCapTruong" />
+          <ScalarProperty Name="KTDoanKhoa" ColumnName="KTDoanKhoa" />
+          <ScalarProperty Name="LLCapKhoa" ColumnName="LLCapKhoa" />
+          <ScalarProperty Name="LLCapboMon" ColumnName="LLCapboMon" />
+          <ScalarProperty Name="ThamGiaHD" ColumnName="ThamGiaHD" />
+          <ScalarProperty Name="TongTieuChi2" ColumnName="TongTieuChi2" />
+          <ScalarProperty Name="GiuVeSinh" ColumnName="GiuVeSinh" />
+          <ScalarProperty Name="GiuGinAnNinh" ColumnName="GiuGinAnNinh" />
+          <ScalarProperty Name="KhongViPham" ColumnName="KhongViPham" />
+          <ScalarProperty Name="TongTieuChi1" ColumnName="TongTieuChi1" />
+          <ScalarProperty Name="NgoaiNgu" ColumnName="NgoaiNgu" />
+          <ScalarProperty Name="TinHoc" ColumnName="TinHoc" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="CoGangVuotKho" ColumnName="CoGangVuotKho" />
+          <ScalarProperty Name="KQHocTap" ColumnName="KQHocTap" />
+          <ScalarProperty Name="DiHocDayDu" ColumnName="DiHocDayDu" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIAOVIENs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.GIAOVIEN">
+        <MappingFragment StoreEntitySet="GIAOVIEN">
+          <ScalarProperty Name="FK_sMaLopID" ColumnName="FK_sMaLopID" />
+          <ScalarProperty Name="FK_sMaKhoaID" ColumnName="FK_sMaKhoaID" />
+          <ScalarProperty Name="sChucvu" ColumnName="sChucvu" />
+          <ScalarProperty Name="sQuequan" ColumnName="sQuequan" />
+          <ScalarProperty Name="sGioitinh" ColumnName="sGioitinh" />
+          <ScalarProperty Name="dNgaysinh" ColumnName="dNgaysinh" />
+          <ScalarProperty Name="sTenGV" ColumnName="sTenGV" />
+          <ScalarProperty Name="PK_sMaGVID" ColumnName="PK_sMaGVID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOCKies">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.HOCKY">
+        <MappingFragment StoreEntitySet="HOCKY">
+          <ScalarProperty Name="hocky1" ColumnName="hocky" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHOAs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.KHOA">
+        <MappingFragment StoreEntitySet="KHOA">
+          <ScalarProperty Name="sDienthoai" ColumnName="sDienthoai" />
+          <ScalarProperty Name="sDiachi" ColumnName="sDiachi" />
+          <ScalarProperty Name="sChunhiemkhoa" ColumnName="sChunhiemkhoa" />
+          <ScalarProperty Name="sTenKhoa" ColumnName="sTenKhoa" />
+          <ScalarProperty Name="PK_sMaKhoaID" ColumnName="PK_sMaKhoaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOPs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.LOP">
+        <MappingFragment StoreEntitySet="LOP">
+          <ScalarProperty Name="sCovanhoctap" ColumnName="sCovanhoctap" />
+          <ScalarProperty Name="sNamketthuc" ColumnName="sNamketthuc" />
+          <ScalarProperty Name="sNambatdau" ColumnName="sNambatdau" />
+          <ScalarProperty Name="sTenLop" ColumnName="sTenLop" />
+          <ScalarProperty Name="PK_sMaLopID" ColumnName="PK_sMaLopID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NAMHOCs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.NAMHOC">
+        <MappingFragment StoreEntitySet="NAMHOC">
+          <ScalarProperty Name="namhoc1" ColumnName="namhoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quyens">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.Quyen">
+        <MappingFragment StoreEntitySet="Quyen">
+          <ScalarProperty Name="TenQuyen" ColumnName="TenQuyen" />
+          <ScalarProperty Name="IDQuyen" ColumnName="IDQuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SINHVIENs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.SINHVIEN">
+        <MappingFragment StoreEntitySet="SINHVIEN">
+          <ScalarProperty Name="FK_sMaLopID" ColumnName="FK_sMaLopID" />
+          <ScalarProperty Name="sQuequan" ColumnName="sQuequan" />
+          <ScalarProperty Name="sGioitinh" ColumnName="sGioitinh" />
+          <ScalarProperty Name="sChucvu" ColumnName="sChucvu" />
+          <ScalarProperty Name="dNgaysinh" ColumnName="dNgaysinh" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUKIENs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.SUKIEN">
+        <MappingFragment StoreEntitySet="SUKIEN">
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+          <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+          <ScalarProperty Name="DIEM" ColumnName="DIEM" />
+          <ScalarProperty Name="THOIGIAN" ColumnName="THOIGIAN" />
+          <ScalarProperty Name="DIADIEM" ColumnName="DIADIEM" />
+          <ScalarProperty Name="TENSK" ColumnName="TENSK" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAIKHOANs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.TAIKHOAN">
+        <MappingFragment StoreEntitySet="TAIKHOAN">
+          <ScalarProperty Name="IDQuyen" ColumnName="IDQuyen" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THAMGIASUKIENs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.THAMGIASUKIEN">
+        <MappingFragment StoreEntitySet="THAMGIASUKIEN">
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+          <ScalarProperty Name="THOIGIAN" ColumnName="THOIGIAN" />
+          <ScalarProperty Name="MASK" ColumnName="MASK" />
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenLT" FunctionName="QL_DIEMRENLUYENModel.Store.sp_ThemDanhGiaDiemRenLuyenLT" />
+    <EntitySetMapping Name="DANHGIARENLUYENLOPTRUONGs">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.DANHGIARENLUYENLOPTRUONG">
+        <MappingFragment StoreEntitySet="DANHGIARENLUYENLOPTRUONG">
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+          <ScalarProperty Name="dNgaylap" ColumnName="dNgaylap" />
+          <ScalarProperty Name="sXeploai" ColumnName="sXeploai" />
+          <ScalarProperty Name="iTongdiem" ColumnName="iTongdiem" />
+          <ScalarProperty Name="TongTieuChi5" ColumnName="TongTieuChi5" />
+          <ScalarProperty Name="CacThanhTichDacBiet" ColumnName="CacThanhTichDacBiet" />
+          <ScalarProperty Name="CanSuLop" ColumnName="CanSuLop" />
+          <ScalarProperty Name="LopTruong" ColumnName="LopTruong" />
+          <ScalarProperty Name="TongTieuChi4" ColumnName="TongTieuChi4" />
+          <ScalarProperty Name="ThamGiaDoi" ColumnName="ThamGiaDoi" />
+          <ScalarProperty Name="CoTinhThanGiupDo" ColumnName="CoTinhThanGiupDo" />
+          <ScalarProperty Name="KhongViPhamPLNN" ColumnName="KhongViPhamPLNN" />
+          <ScalarProperty Name="TongTieuChi3" ColumnName="TongTieuChi3" />
+          <ScalarProperty Name="KTCapCaoHon" ColumnName="KTCapCaoHon" />
+          <ScalarProperty Name="KTCapTruong" ColumnName="KTCapTruong" />
+          <ScalarProperty Name="KTDoanKhoa" ColumnName="KTDoanKhoa" />
+          <ScalarProperty Name="LLCapKhoa" ColumnName="LLCapKhoa" />
+          <ScalarProperty Name="LLCapboMon" ColumnName="LLCapboMon" />
+          <ScalarProperty Name="ThamGiaHD" ColumnName="ThamGiaHD" />
+          <ScalarProperty Name="TongTieuChi2" ColumnName="TongTieuChi2" />
+          <ScalarProperty Name="GiuVeSinh" ColumnName="GiuVeSinh" />
+          <ScalarProperty Name="GiuGinAnNinh" ColumnName="GiuGinAnNinh" />
+          <ScalarProperty Name="KhongViPham" ColumnName="KhongViPham" />
+          <ScalarProperty Name="TongTieuChi1" ColumnName="TongTieuChi1" />
+          <ScalarProperty Name="NgoaiNgu" ColumnName="NgoaiNgu" />
+          <ScalarProperty Name="TinHoc" ColumnName="TinHoc" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="CoGangVuotKho" ColumnName="CoGangVuotKho" />
+          <ScalarProperty Name="KQHocTap" ColumnName="KQHocTap" />
+          <ScalarProperty Name="DiHocDayDu" ColumnName="DiHocDayDu" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="IDDGSV" ColumnName="IDDGSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DANHGIARENLUYENTHAYCOes">
+      <EntityTypeMapping TypeName="QL_DIEMRENLUYENModel.DANHGIARENLUYENTHAYCO">
+        <MappingFragment StoreEntitySet="DANHGIARENLUYENTHAYCO">
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+          <ScalarProperty Name="dNgaylap" ColumnName="dNgaylap" />
+          <ScalarProperty Name="sXeploai" ColumnName="sXeploai" />
+          <ScalarProperty Name="iTongdiem" ColumnName="iTongdiem" />
+          <ScalarProperty Name="TongTieuChi5" ColumnName="TongTieuChi5" />
+          <ScalarProperty Name="CacThanhTichDacBiet" ColumnName="CacThanhTichDacBiet" />
+          <ScalarProperty Name="CanSuLop" ColumnName="CanSuLop" />
+          <ScalarProperty Name="LopTruong" ColumnName="LopTruong" />
+          <ScalarProperty Name="TongTieuChi4" ColumnName="TongTieuChi4" />
+          <ScalarProperty Name="ThamGiaDoi" ColumnName="ThamGiaDoi" />
+          <ScalarProperty Name="CoTinhThanGiupDo" ColumnName="CoTinhThanGiupDo" />
+          <ScalarProperty Name="KhongViPhamPLNN" ColumnName="KhongViPhamPLNN" />
+          <ScalarProperty Name="TongTieuChi3" ColumnName="TongTieuChi3" />
+          <ScalarProperty Name="KTCapCaoHon" ColumnName="KTCapCaoHon" />
+          <ScalarProperty Name="KTCapTruong" ColumnName="KTCapTruong" />
+          <ScalarProperty Name="KTDoanKhoa" ColumnName="KTDoanKhoa" />
+          <ScalarProperty Name="LLCapKhoa" ColumnName="LLCapKhoa" />
+          <ScalarProperty Name="LLCapboMon" ColumnName="LLCapboMon" />
+          <ScalarProperty Name="ThamGiaHD" ColumnName="ThamGiaHD" />
+          <ScalarProperty Name="TongTieuChi2" ColumnName="TongTieuChi2" />
+          <ScalarProperty Name="GiuVeSinh" ColumnName="GiuVeSinh" />
+          <ScalarProperty Name="GiuGinAnNinh" ColumnName="GiuGinAnNinh" />
+          <ScalarProperty Name="KhongViPham" ColumnName="KhongViPham" />
+          <ScalarProperty Name="TongTieuChi1" ColumnName="TongTieuChi1" />
+          <ScalarProperty Name="NgoaiNgu" ColumnName="NgoaiNgu" />
+          <ScalarProperty Name="TinHoc" ColumnName="TinHoc" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="CoGangVuotKho" ColumnName="CoGangVuotKho" />
+          <ScalarProperty Name="KQHocTap" ColumnName="KQHocTap" />
+          <ScalarProperty Name="DiHocDayDu" ColumnName="DiHocDayDu" />
+          <ScalarProperty Name="PK_sMaGVID" ColumnName="PK_sMaGVID" />
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="IDLopTruong" ColumnName="IDLopTruong" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ds_sinhviendanhgiaGV" FunctionName="QL_DIEMRENLUYENModel.Store.ds_sinhviendanhgiaGV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.ds_sinhviendanhgiaGV_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaLopID" ColumnName="PK_sMaLopID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ds_sinhviendanhgiaGV1" FunctionName="QL_DIEMRENLUYENModel.Store.ds_sinhviendanhgiaGV" />
+    <FunctionImportMapping FunctionImportName="ds_themdanhgiadiemrenluyen1" FunctionName="QL_DIEMRENLUYENModel.Store.ds_themdanhgiadiemrenluyen1" />
+    <FunctionImportMapping FunctionImportName="ds_themdanhgiadiemrenluyen11" FunctionName="QL_DIEMRENLUYENModel.Store.ds_themdanhgiadiemrenluyen1" />
+    <FunctionImportMapping FunctionImportName="hienthidsdgsvdglt" FunctionName="QL_DIEMRENLUYENModel.Store.hienthidsdgsvdglt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.hienthidsdgsvdglt_Result">
+          <ScalarProperty Name="MSV" ColumnName="MSV" />
+          <ScalarProperty Name="NH" ColumnName="NH" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="DHDD" ColumnName="DHDD" />
+          <ScalarProperty Name="KQHT" ColumnName="KQHT" />
+          <ScalarProperty Name="CGVK" ColumnName="CGVK" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TH" ColumnName="TH" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="TTC1" ColumnName="TTC1" />
+          <ScalarProperty Name="KVP" ColumnName="KVP" />
+          <ScalarProperty Name="GGAN" ColumnName="GGAN" />
+          <ScalarProperty Name="GVS" ColumnName="GVS" />
+          <ScalarProperty Name="TTC2" ColumnName="TTC2" />
+          <ScalarProperty Name="TGHD" ColumnName="TGHD" />
+          <ScalarProperty Name="LLCBM" ColumnName="LLCBM" />
+          <ScalarProperty Name="LLCK" ColumnName="LLCK" />
+          <ScalarProperty Name="KTCK" ColumnName="KTCK" />
+          <ScalarProperty Name="KTCT" ColumnName="KTCT" />
+          <ScalarProperty Name="KTCCH" ColumnName="KTCCH" />
+          <ScalarProperty Name="TTC3" ColumnName="TTC3" />
+          <ScalarProperty Name="KVPPLNN" ColumnName="KVPPLNN" />
+          <ScalarProperty Name="CTTGD" ColumnName="CTTGD" />
+          <ScalarProperty Name="TGD" ColumnName="TGD" />
+          <ScalarProperty Name="TTC4" ColumnName="TTC4" />
+          <ScalarProperty Name="LT" ColumnName="LT" />
+          <ScalarProperty Name="CSL" ColumnName="CSL" />
+          <ScalarProperty Name="CTTDB" ColumnName="CTTDB" />
+          <ScalarProperty Name="TTC5" ColumnName="TTC5" />
+          <ScalarProperty Name="ITD" ColumnName="ITD" />
+          <ScalarProperty Name="XL" ColumnName="XL" />
+          <ScalarProperty Name="DNL" ColumnName="DNL" />
+          <ScalarProperty Name="BP" ColumnName="BP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_laysk" FunctionName="QL_DIEMRENLUYENModel.Store.sp_laysk">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_laysk_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="hienthidsdgsvdglt1" FunctionName="QL_DIEMRENLUYENModel.Store.hienthidsdgsvdglt" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenGV1" FunctionName="QL_DIEMRENLUYENModel.Store.sp_ThemDanhGiaDiemRenLuyenGV" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenGV11" FunctionName="QL_DIEMRENLUYENModel.Store.sp_ThemDanhGiaDiemRenLuyenGV1" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenLT1" FunctionName="QL_DIEMRENLUYENModel.Store.sp_ThemDanhGiaDiemRenLuyenLT1" />
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgia" FunctionName="QL_DIEMRENLUYENModel.Store.dk_locsinhviendanhgia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.dk_locsinhviendanhgia_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgiagv" FunctionName="QL_DIEMRENLUYENModel.Store.dk_locsinhviendanhgiagv">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.dk_locsinhviendanhgiagv_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgialt" FunctionName="QL_DIEMRENLUYENModel.Store.dk_locsinhviendanhgialt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.dk_locsinhviendanhgialt_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dsdanhgiadiemrenluyenGV" FunctionName="QL_DIEMRENLUYENModel.Store.dsdanhgiadiemrenluyenGV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.dsdanhgiadiemrenluyenGV_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dsdanhgiadiemrenluyenGV1" FunctionName="QL_DIEMRENLUYENModel.Store.dsdanhgiadiemrenluyenGV1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.dsdanhgiadiemrenluyenGV1_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_updateDanhGiaDiemRenLuyenGV1" FunctionName="QL_DIEMRENLUYENModel.Store.sp_updateDanhGiaDiemRenLuyenGV1" />
+    <FunctionImportMapping FunctionImportName="sp_xemdiemrenluyen1" FunctionName="QL_DIEMRENLUYENModel.Store.sp_xemdiemrenluyen1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_xemdiemrenluyen1_Result">
+          <ScalarProperty Name="MSV" ColumnName="MSV" />
+          <ScalarProperty Name="NH" ColumnName="NH" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="DHDD" ColumnName="DHDD" />
+          <ScalarProperty Name="KQHT" ColumnName="KQHT" />
+          <ScalarProperty Name="CGVK" ColumnName="CGVK" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TH" ColumnName="TH" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="TTC1" ColumnName="TTC1" />
+          <ScalarProperty Name="KVP" ColumnName="KVP" />
+          <ScalarProperty Name="GGAN" ColumnName="GGAN" />
+          <ScalarProperty Name="GVS" ColumnName="GVS" />
+          <ScalarProperty Name="TTC2" ColumnName="TTC2" />
+          <ScalarProperty Name="TGHD" ColumnName="TGHD" />
+          <ScalarProperty Name="LLCBM" ColumnName="LLCBM" />
+          <ScalarProperty Name="LLCK" ColumnName="LLCK" />
+          <ScalarProperty Name="KTCK" ColumnName="KTCK" />
+          <ScalarProperty Name="KTCT" ColumnName="KTCT" />
+          <ScalarProperty Name="KTCCH" ColumnName="KTCCH" />
+          <ScalarProperty Name="TTC3" ColumnName="TTC3" />
+          <ScalarProperty Name="KVPPLNN" ColumnName="KVPPLNN" />
+          <ScalarProperty Name="CTTGD" ColumnName="CTTGD" />
+          <ScalarProperty Name="TGD" ColumnName="TGD" />
+          <ScalarProperty Name="TTC4" ColumnName="TTC4" />
+          <ScalarProperty Name="LT" ColumnName="LT" />
+          <ScalarProperty Name="CSL" ColumnName="CSL" />
+          <ScalarProperty Name="CTTDB" ColumnName="CTTDB" />
+          <ScalarProperty Name="TTC5" ColumnName="TTC5" />
+          <ScalarProperty Name="ITD" ColumnName="ITD" />
+          <ScalarProperty Name="XL" ColumnName="XL" />
+          <ScalarProperty Name="DNL" ColumnName="DNL" />
+          <ScalarProperty Name="BP" ColumnName="BP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_xemdiemrenluyen2" FunctionName="QL_DIEMRENLUYENModel.Store.sp_xemdiemrenluyen2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QL_DIEMRENLUYENModel.sp_xemdiemrenluyen2_Result">
+          <ScalarProperty Name="MSV" ColumnName="MSV" />
+          <ScalarProperty Name="NH" ColumnName="NH" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="DHDD" ColumnName="DHDD" />
+          <ScalarProperty Name="KQHT" ColumnName="KQHT" />
+          <ScalarProperty Name="CGVK" ColumnName="CGVK" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TH" ColumnName="TH" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="TTC1" ColumnName="TTC1" />
+          <ScalarProperty Name="KVP" ColumnName="KVP" />
+          <ScalarProperty Name="GGAN" ColumnName="GGAN" />
+          <ScalarProperty Name="GVS" ColumnName="GVS" />
+          <ScalarProperty Name="TTC2" ColumnName="TTC2" />
+          <ScalarProperty Name="TGHD" ColumnName="TGHD" />
+          <ScalarProperty Name="LLCBM" ColumnName="LLCBM" />
+          <ScalarProperty Name="LLCK" ColumnName="LLCK" />
+          <ScalarProperty Name="KTCK" ColumnName="KTCK" />
+          <ScalarProperty Name="KTCT" ColumnName="KTCT" />
+          <ScalarProperty Name="KTCCH" ColumnName="KTCCH" />
+          <ScalarProperty Name="TTC3" ColumnName="TTC3" />
+          <ScalarProperty Name="KVPPLNN" ColumnName="KVPPLNN" />
+          <ScalarProperty Name="CTTGD" ColumnName="CTTGD" />
+          <ScalarProperty Name="TGD" ColumnName="TGD" />
+          <ScalarProperty Name="TTC4" ColumnName="TTC4" />
+          <ScalarProperty Name="LT" ColumnName="LT" />
+          <ScalarProperty Name="CSL" ColumnName="CSL" />
+          <ScalarProperty Name="CTTDB" ColumnName="CTTDB" />
+          <ScalarProperty Name="TTC5" ColumnName="TTC5" />
+          <ScalarProperty Name="ITD" ColumnName="ITD" />
+          <ScalarProperty Name="XL" ColumnName="XL" />
+          <ScalarProperty Name="DNL" ColumnName="DNL" />
+          <ScalarProperty Name="BP" ColumnName="BP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

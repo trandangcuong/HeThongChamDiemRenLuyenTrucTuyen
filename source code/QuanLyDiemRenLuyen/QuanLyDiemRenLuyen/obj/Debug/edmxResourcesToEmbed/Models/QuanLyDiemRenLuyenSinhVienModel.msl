@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuanLyDiemRenLuyenModelStoreContainer" CdmEntityContainer="QuanLyDiemRenLuyenEntities">
+    <EntitySetMapping Name="DANHGIARENLUYENs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.DANHGIARENLUYEN">
+        <MappingFragment StoreEntitySet="DANHGIARENLUYEN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="DiHocDayDu" ColumnName="DiHocDayDu" />
+          <ScalarProperty Name="KQHocTap" ColumnName="KQHocTap" />
+          <ScalarProperty Name="CoGangVuotKho" ColumnName="CoGangVuotKho" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TinHoc" ColumnName="TinHoc" />
+          <ScalarProperty Name="NgoaiNgu" ColumnName="NgoaiNgu" />
+          <ScalarProperty Name="TongTieuChi1" ColumnName="TongTieuChi1" />
+          <ScalarProperty Name="KhongViPham" ColumnName="KhongViPham" />
+          <ScalarProperty Name="GiuGinAnNinh" ColumnName="GiuGinAnNinh" />
+          <ScalarProperty Name="GiuVeSinh" ColumnName="GiuVeSinh" />
+          <ScalarProperty Name="TongTieuChi2" ColumnName="TongTieuChi2" />
+          <ScalarProperty Name="ThamGiaHD" ColumnName="ThamGiaHD" />
+          <ScalarProperty Name="LLCapboMon" ColumnName="LLCapboMon" />
+          <ScalarProperty Name="LLCapKhoa" ColumnName="LLCapKhoa" />
+          <ScalarProperty Name="KTDoanKhoa" ColumnName="KTDoanKhoa" />
+          <ScalarProperty Name="KTCapTruong" ColumnName="KTCapTruong" />
+          <ScalarProperty Name="KTCapCaoHon" ColumnName="KTCapCaoHon" />
+          <ScalarProperty Name="TongTieuChi3" ColumnName="TongTieuChi3" />
+          <ScalarProperty Name="KhongViPhamPLNN" ColumnName="KhongViPhamPLNN" />
+          <ScalarProperty Name="CoTinhThanGiupDo" ColumnName="CoTinhThanGiupDo" />
+          <ScalarProperty Name="ThamGiaDoi" ColumnName="ThamGiaDoi" />
+          <ScalarProperty Name="TongTieuChi4" ColumnName="TongTieuChi4" />
+          <ScalarProperty Name="LopTruong" ColumnName="LopTruong" />
+          <ScalarProperty Name="CanSuLop" ColumnName="CanSuLop" />
+          <ScalarProperty Name="CacThanhTichDacBiet" ColumnName="CacThanhTichDacBiet" />
+          <ScalarProperty Name="TongTieuChi5" ColumnName="TongTieuChi5" />
+          <ScalarProperty Name="iTongdiem" ColumnName="iTongdiem" />
+          <ScalarProperty Name="sXeploai" ColumnName="sXeploai" />
+          <ScalarProperty Name="dNgaylap" ColumnName="dNgaylap" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DANHGIARENLUYENLOPTRUONGs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.DANHGIARENLUYENLOPTRUONG">
+        <MappingFragment StoreEntitySet="DANHGIARENLUYENLOPTRUONG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDDGSV" ColumnName="IDDGSV" />
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="DiHocDayDu" ColumnName="DiHocDayDu" />
+          <ScalarProperty Name="KQHocTap" ColumnName="KQHocTap" />
+          <ScalarProperty Name="CoGangVuotKho" ColumnName="CoGangVuotKho" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TinHoc" ColumnName="TinHoc" />
+          <ScalarProperty Name="NgoaiNgu" ColumnName="NgoaiNgu" />
+          <ScalarProperty Name="TongTieuChi1" ColumnName="TongTieuChi1" />
+          <ScalarProperty Name="KhongViPham" ColumnName="KhongViPham" />
+          <ScalarProperty Name="GiuGinAnNinh" ColumnName="GiuGinAnNinh" />
+          <ScalarProperty Name="GiuVeSinh" ColumnName="GiuVeSinh" />
+          <ScalarProperty Name="TongTieuChi2" ColumnName="TongTieuChi2" />
+          <ScalarProperty Name="ThamGiaHD" ColumnName="ThamGiaHD" />
+          <ScalarProperty Name="LLCapboMon" ColumnName="LLCapboMon" />
+          <ScalarProperty Name="LLCapKhoa" ColumnName="LLCapKhoa" />
+          <ScalarProperty Name="KTDoanKhoa" ColumnName="KTDoanKhoa" />
+          <ScalarProperty Name="KTCapTruong" ColumnName="KTCapTruong" />
+          <ScalarProperty Name="KTCapCaoHon" ColumnName="KTCapCaoHon" />
+          <ScalarProperty Name="TongTieuChi3" ColumnName="TongTieuChi3" />
+          <ScalarProperty Name="KhongViPhamPLNN" ColumnName="KhongViPhamPLNN" />
+          <ScalarProperty Name="CoTinhThanGiupDo" ColumnName="CoTinhThanGiupDo" />
+          <ScalarProperty Name="ThamGiaDoi" ColumnName="ThamGiaDoi" />
+          <ScalarProperty Name="TongTieuChi4" ColumnName="TongTieuChi4" />
+          <ScalarProperty Name="LopTruong" ColumnName="LopTruong" />
+          <ScalarProperty Name="CanSuLop" ColumnName="CanSuLop" />
+          <ScalarProperty Name="CacThanhTichDacBiet" ColumnName="CacThanhTichDacBiet" />
+          <ScalarProperty Name="TongTieuChi5" ColumnName="TongTieuChi5" />
+          <ScalarProperty Name="iTongdiem" ColumnName="iTongdiem" />
+          <ScalarProperty Name="sXeploai" ColumnName="sXeploai" />
+          <ScalarProperty Name="dNgaylap" ColumnName="dNgaylap" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DANHGIARENLUYENTHAYCOes">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.DANHGIARENLUYENTHAYCO">
+        <MappingFragment StoreEntitySet="DANHGIARENLUYENTHAYCO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDLopTruong" ColumnName="IDLopTruong" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sMaGVID" ColumnName="PK_sMaGVID" />
+          <ScalarProperty Name="DiHocDayDu" ColumnName="DiHocDayDu" />
+          <ScalarProperty Name="KQHocTap" ColumnName="KQHocTap" />
+          <ScalarProperty Name="CoGangVuotKho" ColumnName="CoGangVuotKho" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TinHoc" ColumnName="TinHoc" />
+          <ScalarProperty Name="NgoaiNgu" ColumnName="NgoaiNgu" />
+          <ScalarProperty Name="TongTieuChi1" ColumnName="TongTieuChi1" />
+          <ScalarProperty Name="KhongViPham" ColumnName="KhongViPham" />
+          <ScalarProperty Name="GiuGinAnNinh" ColumnName="GiuGinAnNinh" />
+          <ScalarProperty Name="GiuVeSinh" ColumnName="GiuVeSinh" />
+          <ScalarProperty Name="TongTieuChi2" ColumnName="TongTieuChi2" />
+          <ScalarProperty Name="ThamGiaHD" ColumnName="ThamGiaHD" />
+          <ScalarProperty Name="LLCapboMon" ColumnName="LLCapboMon" />
+          <ScalarProperty Name="LLCapKhoa" ColumnName="LLCapKhoa" />
+          <ScalarProperty Name="KTDoanKhoa" ColumnName="KTDoanKhoa" />
+          <ScalarProperty Name="KTCapTruong" ColumnName="KTCapTruong" />
+          <ScalarProperty Name="KTCapCaoHon" ColumnName="KTCapCaoHon" />
+          <ScalarProperty Name="TongTieuChi3" ColumnName="TongTieuChi3" />
+          <ScalarProperty Name="KhongViPhamPLNN" ColumnName="KhongViPhamPLNN" />
+          <ScalarProperty Name="CoTinhThanGiupDo" ColumnName="CoTinhThanGiupDo" />
+          <ScalarProperty Name="ThamGiaDoi" ColumnName="ThamGiaDoi" />
+          <ScalarProperty Name="TongTieuChi4" ColumnName="TongTieuChi4" />
+          <ScalarProperty Name="LopTruong" ColumnName="LopTruong" />
+          <ScalarProperty Name="CanSuLop" ColumnName="CanSuLop" />
+          <ScalarProperty Name="CacThanhTichDacBiet" ColumnName="CacThanhTichDacBiet" />
+          <ScalarProperty Name="TongTieuChi5" ColumnName="TongTieuChi5" />
+          <ScalarProperty Name="iTongdiem" ColumnName="iTongdiem" />
+          <ScalarProperty Name="sXeploai" ColumnName="sXeploai" />
+          <ScalarProperty Name="dNgaylap" ColumnName="dNgaylap" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIAOVIENs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.GIAOVIEN">
+        <MappingFragment StoreEntitySet="GIAOVIEN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaGVID" ColumnName="PK_sMaGVID" />
+          <ScalarProperty Name="sTenGV" ColumnName="sTenGV" />
+          <ScalarProperty Name="dNgaysinh" ColumnName="dNgaysinh" />
+          <ScalarProperty Name="sGioitinh" ColumnName="sGioitinh" />
+          <ScalarProperty Name="sQuequan" ColumnName="sQuequan" />
+          <ScalarProperty Name="sChucvu" ColumnName="sChucvu" />
+          <ScalarProperty Name="FK_sMaKhoaID" ColumnName="FK_sMaKhoaID" />
+          <ScalarProperty Name="FK_sMaLopID" ColumnName="FK_sMaLopID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOCKies">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.HOCKY">
+        <MappingFragment StoreEntitySet="HOCKY">
+          <ScalarProperty Name="hocky1" ColumnName="hocky" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHOAs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.KHOA">
+        <MappingFragment StoreEntitySet="KHOA">
+          <ScalarProperty Name="PK_sMaKhoaID" ColumnName="PK_sMaKhoaID" />
+          <ScalarProperty Name="sTenKhoa" ColumnName="sTenKhoa" />
+          <ScalarProperty Name="sChunhiemkhoa" ColumnName="sChunhiemkhoa" />
+          <ScalarProperty Name="sDiachi" ColumnName="sDiachi" />
+          <ScalarProperty Name="sDienthoai" ColumnName="sDienthoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOPs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.LOP">
+        <MappingFragment StoreEntitySet="LOP">
+          <ScalarProperty Name="PK_sMaLopID" ColumnName="PK_sMaLopID" />
+          <ScalarProperty Name="sTenLop" ColumnName="sTenLop" />
+          <ScalarProperty Name="sNambatdau" ColumnName="sNambatdau" />
+          <ScalarProperty Name="sNamketthuc" ColumnName="sNamketthuc" />
+          <ScalarProperty Name="sCovanhoctap" ColumnName="sCovanhoctap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NAMHOCs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.NAMHOC">
+        <MappingFragment StoreEntitySet="NAMHOC">
+          <ScalarProperty Name="namhoc1" ColumnName="namhoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quyens">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.Quyen">
+        <MappingFragment StoreEntitySet="Quyen">
+          <ScalarProperty Name="IDQuyen" ColumnName="IDQuyen" />
+          <ScalarProperty Name="TenQuyen" ColumnName="TenQuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SINHVIENs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.SINHVIEN">
+        <MappingFragment StoreEntitySet="SINHVIEN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="dNgaysinh" ColumnName="dNgaysinh" />
+          <ScalarProperty Name="sChucvu" ColumnName="sChucvu" />
+          <ScalarProperty Name="sGioitinh" ColumnName="sGioitinh" />
+          <ScalarProperty Name="sQuequan" ColumnName="sQuequan" />
+          <ScalarProperty Name="FK_sMaLopID" ColumnName="FK_sMaLopID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUKIENs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.SUKIEN">
+        <MappingFragment StoreEntitySet="SUKIEN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TENSK" ColumnName="TENSK" />
+          <ScalarProperty Name="DIADIEM" ColumnName="DIADIEM" />
+          <ScalarProperty Name="THOIGIAN" ColumnName="THOIGIAN" />
+          <ScalarProperty Name="DIEM" ColumnName="DIEM" />
+          <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAIKHOANs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.TAIKHOAN">
+        <MappingFragment StoreEntitySet="TAIKHOAN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IDQuyen" ColumnName="IDQuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THAMGIASUKIENs">
+      <EntityTypeMapping TypeName="QuanLyDiemRenLuyenModel.THAMGIASUKIEN">
+        <MappingFragment StoreEntitySet="THAMGIASUKIEN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="MASK" ColumnName="MASK" />
+          <ScalarProperty Name="THOIGIAN" ColumnName="THOIGIAN" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgia" FunctionName="QuanLyDiemRenLuyenModel.Store.dk_locsinhviendanhgia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.dk_locsinhviendanhgia_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgia1" FunctionName="QuanLyDiemRenLuyenModel.Store.dk_locsinhviendanhgia1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.dk_locsinhviendanhgia1_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgiagv" FunctionName="QuanLyDiemRenLuyenModel.Store.dk_locsinhviendanhgiagv">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.dk_locsinhviendanhgiagv_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgiagv1" FunctionName="QuanLyDiemRenLuyenModel.Store.dk_locsinhviendanhgiagv1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.dk_locsinhviendanhgiagv1_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgialt" FunctionName="QuanLyDiemRenLuyenModel.Store.dk_locsinhviendanhgialt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.dk_locsinhviendanhgialt_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dk_locsinhviendanhgialt1" FunctionName="QuanLyDiemRenLuyenModel.Store.dk_locsinhviendanhgialt1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.dk_locsinhviendanhgialt1_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ds_sinhviendanhgiaGV" FunctionName="QuanLyDiemRenLuyenModel.Store.ds_sinhviendanhgiaGV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.ds_sinhviendanhgiaGV_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaLopID" ColumnName="PK_sMaLopID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ds_sinhviendanhgiaGV1" FunctionName="QuanLyDiemRenLuyenModel.Store.ds_sinhviendanhgiaGV1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.ds_sinhviendanhgiaGV1_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaLopID" ColumnName="PK_sMaLopID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ds_themdanhgiadiemrenluyen1" FunctionName="QuanLyDiemRenLuyenModel.Store.ds_themdanhgiadiemrenluyen1" />
+    <FunctionImportMapping FunctionImportName="ds_themdanhgiadiemrenluyen2" FunctionName="QuanLyDiemRenLuyenModel.Store.ds_themdanhgiadiemrenluyen2" />
+    <FunctionImportMapping FunctionImportName="dsdanhgiadiemrenluyenGV1" FunctionName="QuanLyDiemRenLuyenModel.Store.dsdanhgiadiemrenluyenGV1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.dsdanhgiadiemrenluyenGV1_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="eqeq" FunctionName="QuanLyDiemRenLuyenModel.Store.eqeq">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.eqeq_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="hienthidsdgsvdglt" FunctionName="QuanLyDiemRenLuyenModel.Store.hienthidsdgsvdglt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.hienthidsdgsvdglt_Result">
+          <ScalarProperty Name="MSV" ColumnName="MSV" />
+          <ScalarProperty Name="NH" ColumnName="NH" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="DHDD" ColumnName="DHDD" />
+          <ScalarProperty Name="KQHT" ColumnName="KQHT" />
+          <ScalarProperty Name="CGVK" ColumnName="CGVK" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TH" ColumnName="TH" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="TTC1" ColumnName="TTC1" />
+          <ScalarProperty Name="KVP" ColumnName="KVP" />
+          <ScalarProperty Name="GGAN" ColumnName="GGAN" />
+          <ScalarProperty Name="GVS" ColumnName="GVS" />
+          <ScalarProperty Name="TTC2" ColumnName="TTC2" />
+          <ScalarProperty Name="TGHD" ColumnName="TGHD" />
+          <ScalarProperty Name="LLCBM" ColumnName="LLCBM" />
+          <ScalarProperty Name="LLCK" ColumnName="LLCK" />
+          <ScalarProperty Name="KTCK" ColumnName="KTCK" />
+          <ScalarProperty Name="KTCT" ColumnName="KTCT" />
+          <ScalarProperty Name="KTCCH" ColumnName="KTCCH" />
+          <ScalarProperty Name="TTC3" ColumnName="TTC3" />
+          <ScalarProperty Name="KVPPLNN" ColumnName="KVPPLNN" />
+          <ScalarProperty Name="CTTGD" ColumnName="CTTGD" />
+          <ScalarProperty Name="TGD" ColumnName="TGD" />
+          <ScalarProperty Name="TTC4" ColumnName="TTC4" />
+          <ScalarProperty Name="LT" ColumnName="LT" />
+          <ScalarProperty Name="CSL" ColumnName="CSL" />
+          <ScalarProperty Name="CTTDB" ColumnName="CTTDB" />
+          <ScalarProperty Name="TTC5" ColumnName="TTC5" />
+          <ScalarProperty Name="ITD" ColumnName="ITD" />
+          <ScalarProperty Name="XL" ColumnName="XL" />
+          <ScalarProperty Name="DNL" ColumnName="DNL" />
+          <ScalarProperty Name="BP" ColumnName="BP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="hienthidsdgsvdglt1" FunctionName="QuanLyDiemRenLuyenModel.Store.hienthidsdgsvdglt1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.hienthidsdgsvdglt1_Result">
+          <ScalarProperty Name="MSV" ColumnName="MSV" />
+          <ScalarProperty Name="NH" ColumnName="NH" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="DHDD" ColumnName="DHDD" />
+          <ScalarProperty Name="KQHT" ColumnName="KQHT" />
+          <ScalarProperty Name="CGVK" ColumnName="CGVK" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TH" ColumnName="TH" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="TTC1" ColumnName="TTC1" />
+          <ScalarProperty Name="KVP" ColumnName="KVP" />
+          <ScalarProperty Name="GGAN" ColumnName="GGAN" />
+          <ScalarProperty Name="GVS" ColumnName="GVS" />
+          <ScalarProperty Name="TTC2" ColumnName="TTC2" />
+          <ScalarProperty Name="TGHD" ColumnName="TGHD" />
+          <ScalarProperty Name="LLCBM" ColumnName="LLCBM" />
+          <ScalarProperty Name="LLCK" ColumnName="LLCK" />
+          <ScalarProperty Name="KTCK" ColumnName="KTCK" />
+          <ScalarProperty Name="KTCT" ColumnName="KTCT" />
+          <ScalarProperty Name="KTCCH" ColumnName="KTCCH" />
+          <ScalarProperty Name="TTC3" ColumnName="TTC3" />
+          <ScalarProperty Name="KVPPLNN" ColumnName="KVPPLNN" />
+          <ScalarProperty Name="CTTGD" ColumnName="CTTGD" />
+          <ScalarProperty Name="TGD" ColumnName="TGD" />
+          <ScalarProperty Name="TTC4" ColumnName="TTC4" />
+          <ScalarProperty Name="LT" ColumnName="LT" />
+          <ScalarProperty Name="CSL" ColumnName="CSL" />
+          <ScalarProperty Name="CTTDB" ColumnName="CTTDB" />
+          <ScalarProperty Name="TTC5" ColumnName="TTC5" />
+          <ScalarProperty Name="ITD" ColumnName="ITD" />
+          <ScalarProperty Name="XL" ColumnName="XL" />
+          <ScalarProperty Name="DNL" ColumnName="DNL" />
+          <ScalarProperty Name="BP" ColumnName="BP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sd_sinhviendanhgia" FunctionName="QuanLyDiemRenLuyenModel.Store.sd_sinhviendanhgia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sd_sinhviendanhgia_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaLopID" ColumnName="PK_sMaLopID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sd_sinhviendanhgia1" FunctionName="QuanLyDiemRenLuyenModel.Store.sd_sinhviendanhgia1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sd_sinhviendanhgia1_Result">
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaLopID" ColumnName="PK_sMaLopID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Select_MaSV" FunctionName="QuanLyDiemRenLuyenModel.Store.Select_MaSV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.Select_MaSV_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PK_sMaSVID" ColumnName="PK_sMaSVID" />
+          <ScalarProperty Name="sTenSV" ColumnName="sTenSV" />
+          <ScalarProperty Name="dNgaysinh" ColumnName="dNgaysinh" />
+          <ScalarProperty Name="sChucvu" ColumnName="sChucvu" />
+          <ScalarProperty Name="sGioitinh" ColumnName="sGioitinh" />
+          <ScalarProperty Name="sQuequan" ColumnName="sQuequan" />
+          <ScalarProperty Name="FK_sMaLopID" ColumnName="FK_sMaLopID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Select_SV" FunctionName="QuanLyDiemRenLuyenModel.Store.Select_SV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.Select_SV_Result">
+          <ScalarProperty Name="Mã_SV" ColumnName="Mã SV" />
+          <ScalarProperty Name="Tên_SV" ColumnName="Tên SV" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Chức_vụ" ColumnName="Chức vụ" />
+          <ScalarProperty Name="Quê_quán" ColumnName="Quê quán" />
+          <ScalarProperty Name="Lớp" ColumnName="Lớp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_cho11" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_cho11">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_cho11_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_DanhSachSuKien" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_DanhSachSuKien">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_DanhSachSuKien_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TENSK" ColumnName="TENSK" />
+          <ScalarProperty Name="DIEM" ColumnName="DIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_DanhSachSuKien1" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_DanhSachSuKien1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_DanhSachSuKien1_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TENSK" ColumnName="TENSK" />
+          <ScalarProperty Name="DIEM" ColumnName="DIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_dssukien" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_dssukien">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_dssukien_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="DIEM" ColumnName="DIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_hghghsk" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_hghghsk">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_hghghsk_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_laydiemsk" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_laydiemsk">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_laydiemsk_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_laydiemsukien" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_laydiemsukien">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_laydiemsukien_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_laydiemsukien1" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_laydiemsukien1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_laydiemsukien1_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_LayDiemThamGiaHD" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_LayDiemThamGiaHD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_LayDiemThamGiaHD_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_laysk" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_laysk">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_laysk_Result">
+          <ScalarProperty Name="FK_sMaSVID" ColumnName="FK_sMaSVID" />
+          <ScalarProperty Name="PK_sHockyID" ColumnName="PK_sHockyID" />
+          <ScalarProperty Name="PK_sNamHoc" ColumnName="PK_sNamHoc" />
+          <ScalarProperty Name="TONGDIEM" ColumnName="TONGDIEM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_test" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_test">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_test_Result">
+          <ScalarProperty Name="MASV" ColumnName="MASV" />
+          <ScalarProperty Name="HOCKY" ColumnName="HOCKY" />
+          <ScalarProperty Name="NAM" ColumnName="NAM" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyen" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_ThemDanhGiaDiemRenLuyen" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenGV" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_ThemDanhGiaDiemRenLuyenGV" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenGV1" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_ThemDanhGiaDiemRenLuyenGV1" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenGV2" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_ThemDanhGiaDiemRenLuyenGV2" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenLT" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_ThemDanhGiaDiemRenLuyenLT" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenLT1" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_ThemDanhGiaDiemRenLuyenLT1" />
+    <FunctionImportMapping FunctionImportName="sp_ThemDanhGiaDiemRenLuyenLT2" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_ThemDanhGiaDiemRenLuyenLT2" />
+    <FunctionImportMapping FunctionImportName="sp_themthamgiasukien" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_themthamgiasukien" />
+    <FunctionImportMapping FunctionImportName="sp_themthamgiasukien1" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_themthamgiasukien1" />
+    <FunctionImportMapping FunctionImportName="sp_xemdiemrenluyen2" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_xemdiemrenluyen2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyDiemRenLuyenModel.sp_xemdiemrenluyen2_Result">
+          <ScalarProperty Name="MSV" ColumnName="MSV" />
+          <ScalarProperty Name="NH" ColumnName="NH" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="DHDD" ColumnName="DHDD" />
+          <ScalarProperty Name="KQHT" ColumnName="KQHT" />
+          <ScalarProperty Name="CGVK" ColumnName="CGVK" />
+          <ScalarProperty Name="NCKH" ColumnName="NCKH" />
+          <ScalarProperty Name="TH" ColumnName="TH" />
+          <ScalarProperty Name="NN" ColumnName="NN" />
+          <ScalarProperty Name="TTC1" ColumnName="TTC1" />
+          <ScalarProperty Name="KVP" ColumnName="KVP" />
+          <ScalarProperty Name="GGAN" ColumnName="GGAN" />
+          <ScalarProperty Name="GVS" ColumnName="GVS" />
+          <ScalarProperty Name="TTC2" ColumnName="TTC2" />
+          <ScalarProperty Name="TGHD" ColumnName="TGHD" />
+          <ScalarProperty Name="LLCBM" ColumnName="LLCBM" />
+          <ScalarProperty Name="LLCK" ColumnName="LLCK" />
+          <ScalarProperty Name="KTCK" ColumnName="KTCK" />
+          <ScalarProperty Name="KTCT" ColumnName="KTCT" />
+          <ScalarProperty Name="KTCCH" ColumnName="KTCCH" />
+          <ScalarProperty Name="TTC3" ColumnName="TTC3" />
+          <ScalarProperty Name="KVPPLNN" ColumnName="KVPPLNN" />
+          <ScalarProperty Name="CTTGD" ColumnName="CTTGD" />
+          <ScalarProperty Name="TGD" ColumnName="TGD" />
+          <ScalarProperty Name="TTC4" ColumnName="TTC4" />
+          <ScalarProperty Name="LT" ColumnName="LT" />
+          <ScalarProperty Name="CSL" ColumnName="CSL" />
+          <ScalarProperty Name="CTTDB" ColumnName="CTTDB" />
+          <ScalarProperty Name="TTC5" ColumnName="TTC5" />
+          <ScalarProperty Name="ITD" ColumnName="ITD" />
+          <ScalarProperty Name="XL" ColumnName="XL" />
+          <ScalarProperty Name="DNL" ColumnName="DNL" />
+          <ScalarProperty Name="BP" ColumnName="BP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_updateDanhGiaDiemRenLuyenGV1" FunctionName="QuanLyDiemRenLuyenModel.Store.sp_updateDanhGiaDiemRenLuyenGV1" />
+  </EntityContainerMapping>
+</Mapping>

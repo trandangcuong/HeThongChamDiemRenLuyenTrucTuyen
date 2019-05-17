@@ -1,0 +1,1059 @@
+﻿
+@model List< QuanLyDiemRenLuyen.Models.hienthidsdgsvdglt_Result>
+
+
+@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Shared/_LayoutNguoiDung.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    input[type="checkbox"], input[type="radio"] {
+        width: 25px;
+        height: 25px;
+    }
+
+    .table {
+        width: 90%;
+        margin-left: 55px;
+        text-align: center;
+    }
+
+    .table, th, td {
+        border: 1px solid black;
+    }
+
+        .table th {
+            background-color: #0099FF;
+            color: white;
+            text-align: center;
+        }
+
+    .a {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .ab {
+        text-align: left;
+    }
+</style>
+<h4 class="a">Sinh Viên Tự Đánh Giá</h4>
+
+
+
+@using (Html.BeginForm("ChiTietSVLT", "QuanLyDiemRenLuyen", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <center>
+        <div class="checkbox">
+            <input type="checkbox" name="planned_checked" id="planned_checked" /><label style="font-size:14px;">Duyệt</label>
+        </div>
+    </center>
+
+    <table class="table">
+
+        <tr>
+
+            <th>
+                Nội dung đánh giá
+            </th>
+
+
+            <th>
+                Mức điểm
+            </th>
+            <th>
+                SV tự chấm điểm
+            </th>
+            <th>
+                Lớp trưởng chấm điểm
+
+            </th>
+            <th>Giáo viên chấm điểm</th>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;">
+                1. Đánh giá về ý thức học tập
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;">a. Tinh thần thái độ và kết quả học tập</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Đi học đầy đủ, đúng giờ, nghiêm túc trong giờ học,  không vi phạm quy chế về thi, kiểm tra </td>
+            <td>
+                10
+            </td>
+
+            <td><input type="checkbox" name="DiHocDayDu" value="10" /></td>
+
+            <td><input type="checkbox" name="DiHocDayDuLT" value="10" /></td>
+            <td><input type="checkbox" name="DiHocDayDuGV" value="10" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="color:red;font-weight: bold;">- Kết quả học tập trong học kỳ: </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="color:red;">•	ĐTBCHK 9 đến 10  </td>
+            <td>
+                8
+            </td>
+            <td>@Html.RadioButton("KQHocTap", "8")</td>
+            <td>@Html.RadioButton("KQHocTapLT", "8")</td>
+            <td>@Html.RadioButton("KQHocTapGV", "8")</td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="color:red;">•    ĐTBCHK 8 đến cận 9  </td>
+            <td>
+                6
+            </td>
+            <td>@Html.RadioButton("KQHocTap", "6")</td>
+            <td>@Html.RadioButton("KQHocTapLT", "6")</td>
+            <td>@Html.RadioButton("KQHocTapGV", "6")</td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="color:red;">•	ĐTBCHK 7 đến cận 8 </td>
+            <td>
+                4
+            </td>
+            <td>@Html.RadioButton("KQHocTap", "4")</td>
+            <td>@Html.RadioButton("KQHocTapLT", "4")</td>
+            <td>@Html.RadioButton("KQHocTapGV", "4")</td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="color:red;">•	ĐTBCHK 5 đến cận 7  </td>
+            <td>
+                2
+            </td>
+            <td>@Html.RadioButton("KQHocTap", "2")</td>
+            <td>@Html.RadioButton("KQHocTapLT", "2")</td>
+            <td>@Html.RadioButton("KQHocTapGV", "2")</td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="color:red;font-weight: bold;">- Có cố gắng, vượt khó trong học tập (có ĐTBCHK  sau lớn hơn học kỳ trước đó; đối với SV năm thứ nhất,  học kỳ I  không có điểm dưới 5)  </td>
+            <td>
+                2
+            </td>
+            <td><input type="checkbox" name="CoGangVuotKho" value="2" /></td>
+            <td><input type="checkbox" name="CoGangVuotKhoLT" value="2" /></td>
+            <td><input type="checkbox" name="CoGangVuotKhoGV" value="2" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;"> b. Tham gia nghiên cứu khoa học, nâng cao trình độ ngoại ngữ, tin học </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Nghiên cứu khoa học (NCKH):  </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">•	Có tham gia đề tài NCKH của sinh viên hoặc của Khoa và cấp tương đương, có xác nhận của Chủ nhiệm đề tài (không tính bài tập, tiểu luận, đồ án môn học, luận văn…)   </td>
+            <td>5</td>
+
+            <td><input type="checkbox" name="NCKH" value="5" /></td>
+            <td><input type="checkbox" name="NCKHLT" value="5" /></td>
+            <td><input type="checkbox" name="NCKHGV" value="5" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Hoàn thành chuẩn đầu ra Tin học, Ngoại ngữ:</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">•	Tin học </td>
+            <td>5</td>
+            <td><input type="checkbox" name="TinHoc" value="5" /></td>
+            <td><input type="checkbox" name="TinHocLT" value="5" /></td>
+            <td><input type="checkbox" name="TinHocGV" value="5" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">•	Ngoại ngữ  </td>
+            <td>10</td>
+            <td><input type="checkbox" name="NgoaiNgu" value="10" /></td>
+            <td><input type="checkbox" name="NgoaiNguLT" value="10" /></td>
+            <td><input type="checkbox" name="NgoaiNguGV" value="10" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;">Điểm  cộng tối đa của mục 1 là 20 điểm  </td>
+            <td></td>
+            <td>@ViewBag.Tongtieuchi1</td>
+            <td>@ViewBag.Tongtieuchi1lt</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;">2. Đánh giá về ý thức và kết quả chấp hành nội quy, quy chế trong nhà trường </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Không vi phạm và có ý thức tham gia thực hiện nghiêm túc các quy định của Lớp, nội quy, quy chế của Trường, Khoa và các tổ chức trong nhà trườngs</td>
+            <td>15</td>
+            <td><input type="checkbox" name="KhongViPham" value="15" /></td>
+            <td><input type="checkbox" name="KhongViPhamLT" value="15" /></td>
+            <td><input type="checkbox" name="KhongViPhamGV" value="15" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Sinh viên tích cực và tham gia các hoạt động tuyên truyền, vận động mọi người xung quanh thực hiện nghiêm túc nội quy, quy chế, các quy định của nhà trường về:  </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">•	Giữ gìn an ninh, trật tự nơi công cộng</td>
+            <td>10</td>
+            <td><input type="checkbox" name="GiuGinAnNinh" value="10" /></td>
+            <td><input type="checkbox" name="GiuGinAnNinhLT" value="10" /></td>
+            <td><input type="checkbox" name="GiuGinAnNinhGV" value="10" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">•	Giữ gìn vệ sinh, bảo vệ cảnh quan môi trường, nếp sống văn minh (có xác nhận của đoàn thể, Khoa, Trường...) </td>
+            <td>10</td>
+            <td><input type="checkbox" name="GiuVeSinh" value="10" /></td>
+            <td><input type="checkbox" name="GiuVeSinhLT" value="10" /></td>
+            <td><input type="checkbox" name="GiuVeSinhGV" value="10" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;">Điểm  cộng tối đa của mục 2 là 25 điểm  </td>
+            <td></td>
+            <td>@ViewBag.Tongtieuchi2</td>
+            <td>@ViewBag.Tongtieuchi2lt</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;">  3. Đánh giá về ý thức và kết quả tham gia các hoạt động chính trị - xã hội, văn hóa, văn nghệ, thể thao.<br />(Mục 3 được chấm điểm tự động thông qua tham gia hoạt động)  </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Tham gia đầy đủ các hoạt động chính trị, xã hội, văn hóa, văn nghệ, thể thao các cấp từ Lớp, Chi hội, Chi đoàn trở lên tổ chức </td>
+            <td>12</td>
+            <td>@ViewBag.ThamGiaHD</td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Là lực lượng nòng cốt trong các phong trào văn hóa, văn nghệ, thể thao:  </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+        <tr>
+            <td class="ab">•	Cấp Bộ môn, Chi đoàn, Chi hội, Đội, Nhóm </td>
+            <td>3</td>
+            <td><input type="checkbox" name="LLCapboMon" value="3" /></td>
+            <td><input type="checkbox" name="LLCapboMonLT" value="3" /></td>
+            <td><input type="checkbox" name="LLCapboMonGV" value="3" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">•	Cấp Khoa (và tương đương), Trường </td>
+            <td>5</td>
+            <td><input type="checkbox" name="LLCapKhoa" value="5" /></td>
+            <td><input type="checkbox" name="LLCapKhoaLT" value="5" /></td>
+            <td><input type="checkbox" name="LLCapKhoaGV" value="5" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Được khen thưởng trong các hoạt động phong trào: </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+        <tr>
+            <td class="ab">•	Quyết định khen thưởng của Đoàn Khoa  (và tương đương) </td>
+            <td>6</td>
+            <td><input type="checkbox" class="checkitem" name="KTDoanKhoa" value="6" /></td>
+            <td><input type="checkbox" class="checkitem" name="KTDoanKhoaLT" value="6" /></td>
+            <td><input type="checkbox" class="checkitem" name="KTDoanKhoaGV" value="6" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">•	Cấp Khoa (và tương đương), Trường </td>
+            <td>8</td>
+            <td><input type="checkbox" name="KTCapTruong" value="8" /></td>
+            <td><input type="checkbox" name="KTCapTruongLT" value="8" /></td>
+            <td><input type="checkbox" name="KTCapTruongGV" value="8" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">•	Giấy khen cấp cao hơn</td>
+            <td>10</td>
+            <td><input type="checkbox" name="KTCapCaoHon" value="10" /></td>
+            <td><input type="checkbox" name="KTCapCaoHonLT" value="10" /></td>
+            <td><input type="checkbox" name="KTCapCaoHonGV" value="10" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;"> Điểm cộng tối đa của mục 3 là 20 điểm   </td>
+            <td></td>
+            <td>@ViewBag.Tongtieuchi3</td>
+            <td>@ViewBag.Tongtieuchi3lt</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;">4. Đánh giá về phẩm chất công dân và quan hệ với cộng đồng.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Không vi phạm pháp luật của Nhà nước </td>
+            <td>10</td>
+            <td><input type="checkbox" name="KhongViPhamPLNN" value="10" /></td>
+            <td><input type="checkbox" name="KhongViPhamPLNNLT" value="10" /></td>
+            <td><input type="checkbox" name="KhongViPhamPLNNGV" value="10" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Có tinh thần giúp đỡ bạn bè trong học tập, trong    cuộc sống.   </td>
+            <td>5</td>
+            <td><input type="checkbox" name="CoTinhThanGiupDo" value="5" /></td>
+            <td><input type="checkbox" name="CoTinhThanGiupDoLT" value="5" /></td>
+            <td><input type="checkbox" name="CoTinhThanGiupDoGV" value="5" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Tham gia đội, nhóm sinh hoạt hướng đến lợi ích cộng đồng (tham gia công tác xã hội ở Trường, nơi cư trú, địa phương...) </td>
+            <td>10</td>
+            <td><input type="checkbox" name="ThamGiaDoi" value="10" /></td>
+            <td><input type="checkbox" name="ThamGiaDoiLT" value="10" /></td>
+            <td><input type="checkbox" name="ThamGiaDoiGV" value="10" /></td>
+
+        </tr>
+
+
+
+        <tr>
+            <td class="ab" style="font-weight: bold;">Điểm cộng tối đa của mục 4 là 25 điểm    </td>
+            <td></td>
+            <td>@ViewBag.Tongtieuchi4</td>
+            <td>@ViewBag.Tongtieuchi4lt</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold;">5.  Đánh giá về ý thức và kết quả tham gia công tác phụ trách lớp, các đoàn thể, tổ chức trong nhà trường người học có thành tích đặc biệt</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Là Lớp trưởng, Bí thư Chi đoàn, Ủy viên BCH đoàn thể cấp cao hơn Chi đoàn, BCH Hội sinh viên Trường, Liên Chi hội trưởng, Chi hội trưởng Hội Sinh viên, Đội trưởng các Đội, Nhóm thuộc Hội SV Trường đã hoàn thành nhiệm vụ được giao.  </td>
+            <td>10</td>
+            <td><input type="checkbox" name="LopTruong" value="10" /></td>
+            <td><input type="checkbox" name="LopTruongLT" value="10" /></td>
+            <td><input type="checkbox" name="LopTruongGV" value="10" /></td>
+
+        </tr>
+        <tr>
+            <td class="ab">- Là thành viên của Ban Cán sự lớp, Ban Chấp hành chi đoàn, Ban chấp hành Liên Chi hội SV, Chi hội SV Trường (trừ các thành viên nêu  mục trên), Đội SV an ninh xung kích (KTX), Đội tự quản KTX, trưởng phòng KTX, đã hoàn thành nhiệm vụ được giao.     </td>
+            <td>8</td>
+            <td><input type="checkbox" name="CanSuLop" value="8" /></td>
+            <td><input type="checkbox" name="CanSuLopLT" value="8" /></td>
+            <td><input type="checkbox" name="CanSuLopGV" value="8" /></td>
+           
+
+        </tr>
+        <tr>
+            <td class="ab">- Các thành tích đặc biệt</td>
+            <td>10</td>
+            <td><input type="checkbox" name="CacThanhTichDacBiet" value="10" /></td>
+            <td><input type="checkbox" name="CacThanhTichDacBietLT" value="10" /></td>
+            <td><input type="checkbox" name="CacThanhTichDacBietGV" value="10" /></td>
+
+        </tr>
+
+
+
+        <tr>
+            <td class="ab" style="font-weight: bold;">Điểm cộng tối đa của mục 5 là 10 điểm    </td>
+            <td></td>
+            <td>@ViewBag.Tongtieuchi5</td>
+            <td>@ViewBag.Tongtieuchi5lt</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td class="ab" style="font-weight: bold; text-align:center">Cộng các mục 1,2,3,4,5  </td>
+            <td>100</td>
+            <td>@ViewBag.Tong</td>
+            <td>@ViewBag.Tonglt</td>
+            <td></td>
+
+        </tr>
+
+
+    </table>
+    <div style="margin-left:50%;">
+        <button type="submit">Gửi</button>
+
+    </div>
+
+}
+
+@foreach (var item in Model.Where(n => n.BP == 1))
+{
+
+
+
+<script>
+   
+    if (@item.DHDD=="10")
+    {
+
+        $("input[name='DiHocDayDu']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='DiHocDayDu']").prop("disabled", true);
+    }
+    // End DiHocDayDu
+
+    // KQHocTap
+    $("input[name='KQHocTap'][value=" + @item.KQHT + "]").prop('checked', true);
+    $("input[name='KQHocTap']").prop('disabled', true);
+    //end KQHocTap
+
+
+    // CoGangVuotKho
+    if (@item.CGVK=="2")
+    {
+
+        $("input[name='CoGangVuotKho']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='CoGangVuotKho']").prop("disabled", true);
+    }
+    // End CoGangVuotKho
+
+    // NCKH
+    if (@item.NCKH=="5")
+    {
+
+        $("input[name='NCKH']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='NCKH']").prop("disabled", true);
+    }
+    // End NCKH
+
+    // TinHoc
+    if (@item.TH=="5")
+    {
+
+        $("input[name='TinHoc']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='TinHoc']").prop("disabled", true);
+    }
+    // End TinHoc
+
+    //NgoaiNgu
+    if (@item.NN=="10")
+    {
+
+        $("input[name='NgoaiNgu']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='NgoaiNgu']").prop("disabled", true);
+    }
+    // End NgoaiNgu
+
+
+    //KhongViPham
+    if (@item.KVP=="15")
+    {
+
+        $("input[name='KhongViPham']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KhongViPham']").prop("disabled", true);
+    }
+    // End KhongViPham
+
+    //GiuGinAnNinh
+    if (@item.GGAN=="10")
+    {
+
+        $("input[name='GiuGinAnNinh']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='GiuGinAnNinh']").prop("disabled", true);
+    }
+    // End GiuGinAnNinh
+
+    //GiuVeSinh
+    if (@item.GVS=="10")
+    {
+
+        $("input[name='GiuVeSinh']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='GiuVeSinh']").prop("disabled", true);
+    }
+    // End GiuVeSinh
+
+    //LLCapboMon
+    if (@item.LLCBM=="3")
+    {
+
+        $("input[name='LLCapboMon']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='LLCapboMon']").prop("disabled", true);
+    }
+    // End LLCapboMon
+    //LLCapKhoa
+    if (@item.LLCK=="5")
+    {
+
+        $("input[name='LLCapKhoa']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='LLCapKhoa']").prop("disabled", true);
+    }
+    // End LLCapKhoa
+
+    //KTDoanKhoa
+    if (@item.KTCK=="6")
+    {
+
+        $("input[name='KTDoanKhoa']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KTDoanKhoa']").prop("disabled", true);
+    }
+    // End KTDoanKhoa
+
+    //KTCapTruong
+    if (@item.KTCT=="8")
+    {
+
+        $("input[name='KTCapTruong']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KTCapTruong']").prop("disabled", true);
+    }
+    // End KTCapTruong
+
+    //KTCapCaoHon
+    if (@item.KTCCH=="10")
+    {
+
+        $("input[name='KTCapCaoHon']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KTCapCaoHon']").prop("disabled", true);
+    }
+    // End KTCapCaoHon
+
+
+    //KhongViPhamPLNN
+    if (@item.KVPPLNN=="10")
+    {
+
+        $("input[name='KhongViPhamPLNN']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KhongViPhamPLNN']").prop("disabled", true);
+    }
+    // End KhongViPhamPLNN
+
+
+    //CoTinhThanGiupDo
+    if (@item.CTTGD=="5")
+    {
+
+        $("input[name='CoTinhThanGiupDo']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='CoTinhThanGiupDo']").prop("disabled", true);
+    }
+    // End CoTinhThanGiupDo
+
+    //ThamGiaDoi
+    if (@item.TGD=="10")
+    {
+
+        $("input[name='ThamGiaDoi']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='ThamGiaDoi']").prop("disabled", true);
+    }
+    // End ThamGiaDoi
+
+
+    //LopTruong
+    if (@item.LT=="10")
+    {
+
+        $("input[name='LopTruong']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='LopTruong']").prop("disabled", true);
+    }
+    // End LopTruong
+
+    //CanSuLop
+    if (@item.CSL=="8")
+    {
+
+        $("input[name='CanSuLop']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='CanSuLop']").prop("disabled", true);
+    }
+    // End CanSuLop
+
+    // CacThanhTichDacBiet
+    if (@item.CTTDB=="10")
+    {
+
+        $("input[name='CacThanhTichDacBiet']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='CacThanhTichDacBiet']").prop("disabled", true);
+    }
+    // end CacThanhTichDacBiet
+
+
+</script>
+
+}
+
+@foreach (var item in Model.Where(n => n.BP == 2))
+{
+
+
+<script>
+    if (@item.DHDD=="10")
+    {
+
+        $("input[name='DiHocDayDuLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='DiHocDayDuLT']").prop("disabled", true);
+    }
+    // End DiHocDayDu
+
+    // KQHocTap
+    $("input[name='KQHocTapLT'][value=" + @item.KQHT + "]").prop('checked', true);
+    $("input[name='KQHocTapLT']").prop('disabled', true);
+    //end KQHocTap
+
+
+    // CoGangVuotKho
+    if (@item.CGVK=="2")
+    {
+
+        $("input[name='CoGangVuotKhoLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='CoGangVuotKhoLT']").prop("disabled", true);
+    }
+    // End CoGangVuotKho
+
+    // NCKH
+    if (@item.NCKH=="5")
+    {
+
+        $("input[name='NCKHLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='NCKHLT']").prop("disabled", true);
+    }
+    // End NCKH
+
+    // TinHoc
+    if (@item.TH=="5")
+    {
+
+        $("input[name='TinHocLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='TinHocLT']").prop("disabled", true);
+    }
+    // End TinHoc
+
+    //NgoaiNgu
+    if (@item.NN=="10")
+    {
+
+        $("input[name='NgoaiNguLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='NgoaiNguLT']").prop("disabled", true);
+    }
+    // End NgoaiNgu
+
+
+    //KhongViPham
+    if (@item.KVP=="15")
+    {
+
+        $("input[name='KhongViPhamLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KhongViPhamLT']").prop("disabled", true);
+    }
+    // End KhongViPham
+
+    //GiuGinAnNinh
+    if (@item.GGAN=="10")
+    {
+
+        $("input[name='GiuGinAnNinhLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='GiuGinAnNinhLT']").prop("disabled", true);
+    }
+    // End GiuGinAnNinh
+
+    //GiuVeSinh
+    if (@item.GVS=="10")
+    {
+
+        $("input[name='GiuVeSinhLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='GiuVeSinhLT']").prop("disabled", true);
+    }
+    // End GiuVeSinh
+
+    //LLCapboMon
+    if (@item.LLCBM=="3")
+    {
+
+        $("input[name='LLCapboMonLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='LLCapboMonLT']").prop("disabled", true);
+    }
+    // End LLCapboMon
+    //LLCapKhoa
+    if (@item.LLCK=="5")
+    {
+
+        $("input[name='LLCapKhoaLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='LLCapKhoaLT']").prop("disabled", true);
+    }
+    // End LLCapKhoa
+
+    //KTDoanKhoa
+    if (@item.KTCK=="6")
+    {
+
+        $("input[name='KTDoanKhoaLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KTDoanKhoaLT']").prop("disabled", true);
+    }
+    // End KTDoanKhoa
+
+    //KTCapTruong
+    if (@item.KTCT=="8")
+    {
+
+        $("input[name='KTCapTruongLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KTCapTruongLT']").prop("disabled", true);
+    }
+    // End KTCapTruong
+
+    //KTCapCaoHon
+    if (@item.KTCCH=="10")
+    {
+
+        $("input[name='KTCapCaoHonLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KTCapCaoHonLT']").prop("disabled", true);
+    }
+    // End KTCapCaoHon
+
+
+    //KhongViPhamPLNN
+    if (@item.KVPPLNN=="10")
+    {
+
+        $("input[name='KhongViPhamPLNNLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='KhongViPhamPLNNLT']").prop("disabled", true);
+    }
+    // End KhongViPhamPLNN
+
+
+    //CoTinhThanGiupDo
+    if (@item.CTTGD=="5")
+    {
+
+        $("input[name='CoTinhThanGiupDoLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='CoTinhThanGiupDoLT']").prop("disabled", true);
+    }
+    // End CoTinhThanGiupDo
+
+    //ThamGiaDoi
+    if (@item.TGD=="10")
+    {
+
+        $("input[name='ThamGiaDoiLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='ThamGiaDoiLT']").prop("disabled", true);
+    }
+    // End ThamGiaDoi
+
+
+    //LopTruong
+    if (@item.LT=="10")
+    {
+
+        $("input[name='LopTruongLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='LopTruongLT']").prop("disabled", true);
+    }
+    // End LopTruong
+
+    //CanSuLop
+    if (@item.CSL=="8")
+    {
+
+        $("input[name='CanSuLopLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='CanSuLopLT']").prop("disabled", true);
+    }
+    // End CanSuLop
+
+    // CacThanhTichDacBiet
+    if (@item.CTTDB=="10")
+    {
+
+        $("input[name='CacThanhTichDacBietLT']").prop("checked", true);
+        //$("#CacThanhTichDacBiet").attr("disabled", true);
+        $("input[name='CacThanhTichDacBietLT']").prop("disabled", true);
+    }
+
+
+    ///
+
+  
+
+
+
+</script>
+}
+
+@foreach (var item in Model.Where(n => n.BP == 2))
+{
+
+
+    <script>
+        $('input[name="checkAll"]').click(function () {
+            debugger;
+        });
+
+        $(document).ready(function() {
+
+        $("#planned_checked").change(function() {
+        if($(this).is(':checked')) {
+        //dihocdaydu
+        if(@item.DHDD.ToString()=='10'){
+        $("input[name='DiHocDayDuGV']").prop("checked", true);
+        }else{
+        $("input[name='DiHocDayDuGV']").prop("checked", false);
+        }
+
+        //ketquahoctap
+
+        $("input[name='KQHocTapGV'][value=" + @item.KQHT + "]").prop('checked', true);
+        // co gang vuot kho
+
+        if(@item.CGVK.ToString()=='2'){
+        $("input[name='CoGangVuotKhoGV']").prop("checked", true);
+        }else{
+        $("input[name='CoGangVuotKhoGV']").prop("checked", false);
+        }
+        //NCKH
+        if(@item.NCKH.ToString()=='5'){
+        $("input[name='NCKHGV']").prop("checked", true);
+        }else{
+        $("input[name='NCKHGV']").prop("checked", false);
+        }
+        //tinhoc
+        if(@item.TH.ToString()=='5'){
+        $("input[name='TinHocGV']").prop("checked", true);
+        }else{
+        $("input[name='TinHocGV']").prop("checked", false);
+
+        }
+        //anhvan
+        if(@item.NN.ToString()=='10'){
+        $("input[name='NgoaiNguGV']").prop("checked", true);
+        }else{
+        $("input[name='NgoaiNguGV']").prop("checked", false);
+
+        }
+        //kovipham
+        if(@item.KVP.ToString()=='15'){
+        $("input[name='KhongViPhamGV']").prop("checked", true);
+        }else{
+        $("input[name='KhongViPhamGV']").prop("checked", false);
+
+        }
+        //guianninh
+
+        if(@item.GGAN.ToString()=='10'){
+        $("input[name='GiuGinAnNinhGV']").prop("checked", true);
+        }else{
+        $("input[name='GiuGinAnNinhGV']").prop("checked", false);
+
+        }
+        // guivesinh
+        if(@item.GVS.ToString()=='10'){
+        $("input[name='GiuVeSinhGV']").prop("checked", true);
+        }else{
+        $("input[name='GiuVeSinhGV']").prop("checked", false);
+
+        }
+        //llcapbomon
+        if(@item.LLCBM.ToString()=='3'){
+        $("input[name='LLCapboMonGV']").prop("checked", true);
+        }else{
+        $("input[name='LLCapboMonGV']").prop("checked", false);
+
+        }
+        //capkhoa
+        if(@item.LLCK.ToString()=='5'){
+        $("input[name='LLCapKhoaGV']").prop("checked", true);
+        }else{
+        $("input[name='LLCapKhoaGV']").prop("checked", false);
+
+        }
+        //khenthuongdoankhoa
+        if(@item.KTCK.ToString()=='6'){
+        $("input[name='KTDoanKhoaGV']").prop("checked", true);
+        }else{
+        $("input[name='KTDoanKhoaGV']").prop("checked", false);
+
+        }
+        //captruong
+        if(@item.KTCT.ToString()=='8'){
+        $("input[name='KTCapTruongGV']").prop("checked", true);
+        }else{
+        $("input[name='KTCapTruongGV']").prop("checked", false);
+
+        }
+        //khenthuongcaohon
+        if(@item.KTCCH.ToString()=='10'){
+        $("input[name='KTCapCaoHonGV']").prop("checked", true);
+        }else{
+        $("input[name='KTCapCaoHonGV']").prop("checked", false);
+
+        }
+        //koviphampl
+        if(@item.KVPPLNN.ToString()=='10'){
+        $("input[name='KhongViPhamPLNNGV']").prop("checked", true);
+        }else{
+        $("input[name='KhongViPhamPLNNGV']").prop("checked", false);
+
+        }
+
+        //tinhthangiupdo
+        if(@item.CTTGD.ToString()=='5'){
+        $("input[name='CoTinhThanGiupDoGV']").prop("checked", true);
+        }else{
+        $("input[name='CoTinhThanGiupDoGV']").prop("checked", false);
+
+        }
+        //thamgiadoandoi
+        if(@item.TGD.ToString()=='10'){
+        $("input[name='ThamGiaDoiGV']").prop("checked", true);
+        }else{
+        $("input[name='ThamGiaDoiGV']").prop("checked", false);
+
+        }
+        //loptruong
+        if(@item.LT.ToString()=='10'){
+        $("input[name='LopTruongGV']").prop("checked", true);
+        }else{
+        $("input[name='LopTruongGV']").prop("checked", false);
+
+        }
+        //canbolop
+        if(@item.CSL.ToString()=='8'){
+        $("input[name='CanSuLopGV']").prop("checked", true);
+        }else{
+        $("input[name='CanSuLopGV']").prop("checked", false);
+
+        }
+        //thanhtichdacbiet
+        if(@item.CTTDB.ToString()=='10'){
+        $("input[name='CacThanhTichDacBietGV']").prop("checked", true);
+        }else{
+        $("input[name='CacThanhTichDacBietGVS']").prop("checked", false);
+        }
+        } else {
+
+        $("input[name='DiHocDayDuGV']").prop("checked", false);
+        $("input[name='KQHocTapGV'][value=" + @item.KQHT + "]").prop('checked', false);
+        $("input[name='CoGangVuotKhoGV']").prop("checked", false);
+        $("input[name='CanSuLopGV']").prop("checked", false);
+        $("input[name='LopTruongGV']").prop("checked", false);
+        $("input[name='ThamGiaDoiGV']").prop("checked", false);
+        $("input[name='CoTinhThanGiupDoGV']").prop("checked", false);
+        $("input[name='KhongViPhamPLNNGV']").prop("checked", false);
+        $("input[name='KTCapCaoHonGV']").prop("checked", false);
+        $("input[name='KTCapTruongGV']").prop("checked", false);
+        $("input[name='KTDoanKhoaGV']").prop("checked", false);
+        $("input[name='LLCapKhoaGV']").prop("checked", false);
+        $("input[name='LLCapboMonGV']").prop("checked", false);
+        $("input[name='GiuVeSinhGV']").prop("checked", false);
+        $("input[name='GiuGinAnNinhGV']").prop("checked", false);
+        $("input[name='KhongViPhamGV']").prop("checked", false);
+        $("input[name='NgoaiNguGV']").prop("checked", false);
+        $("input[name='TinHocGV']").prop("checked", false);
+        $("input[name='NCKHGV']").prop("checked", false);
+        $("input[name='CacThanhTichDacBietGV']").prop("checked", false);
+        }
+        });
+
+
+
+        });
+
+
+    </script>
+
+}

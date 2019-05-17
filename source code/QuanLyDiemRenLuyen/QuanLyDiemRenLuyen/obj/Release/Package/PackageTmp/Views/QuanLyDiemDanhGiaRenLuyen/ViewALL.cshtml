@@ -1,0 +1,226 @@
+﻿@model IEnumerable<QuanLyDiemRenLuyen.Models.DANHGIARENLUYEN>
+
+@{
+    ViewBag.Title = "ViewALL";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .table table-striped table-condensed{background-color:gray;}
+    .dataTables_wrapper {
+        margin-left: -280px;
+    }
+</style>
+<table class="table table-striped table-condensed" id="employeeTable">
+    <thead>
+        <tr>
+            <th>
+                MaSV
+            </th>
+            <th>
+                NamHoc
+            </th>
+            <th>
+                HocKi
+            </th>
+            <th>
+                DiHocDayDu
+            </th>
+            <th>
+                KQHT
+            </th>
+            <th>
+                CGVK
+            </th>
+            <th>
+                NCKH
+            </th>
+            <th>
+               TinHoc
+            </th>
+            <th>
+                NgoaiNgu
+            </th>
+            <th>
+                TongTC1
+            </th>
+            <th>
+                KVP  
+            </th>
+            <th>
+                GGAN
+            </th>
+            <th>
+              GGVS
+            </th>
+            <th>
+                TongTC2
+            </th>
+            <th>
+                TGHD
+            </th>
+            <th>
+                LLCBM
+            </th>
+            <th>
+               LLCBK
+            </th>
+            <th>
+               KTDK
+            </th>
+            <th>
+               KTCT
+            </th>
+            <th>
+               KTCCH
+            </th>
+            <th>
+                TongTC3
+            </th>
+            <th>
+                KVPPLNN
+            </th>
+            <th>
+                CTTGD
+            </th>
+            <th>
+                TGD
+            </th>
+            <th>
+                TongTC4
+            </th>
+            <th>
+                LopTruong
+            </th>
+            <th>
+                CanSuLop
+            </th>
+            <th>
+                CTTDB
+            </th>
+            <th>
+                TongTC5
+            </th>
+            <th>
+                TongDiem
+            </th>
+            <th>
+                sXeploai
+            </th>
+            <th>
+                dNgaylap
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FK_sMaSVID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PK_sNamHoc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PK_sHockyID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiHocDayDu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KQHocTap)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CoGangVuotKho)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.NCKH)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TinHoc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgoaiNgu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TongTieuChi1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KhongViPham)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GiuGinAnNinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GiuVeSinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TongTieuChi2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThamGiaHD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LLCapboMon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LLCapKhoa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KTDoanKhoa)
+                </td>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.KTCapTruong)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KTCapCaoHon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TongTieuChi3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KhongViPhamPLNN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CoTinhThanGiupDo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThamGiaDoi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TongTieuChi4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LopTruong)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CanSuLop)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CacThanhTichDacBiet)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TongTieuChi5)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.iTongdiem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sXeploai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dNgaylap)
+                </td>
+                <td>
+                    <a class="btn btn-primary btn-sm" onclick="Edit('@Url.Action("AddOrEdit", "QuanLyDiemDanhGiaRenLuyen", new { id=@item.ID})')"><i class="fa fa-pencil fa-lg"></i></a>
+                    <a class="btn btn-danger btn-sm" onclick="Delete('@Url.Action("Delete", "QuanLyDiemDanhGiaRenLuyen", new { id=@item.ID})')"><i class="fa fa-trash fa-lg"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

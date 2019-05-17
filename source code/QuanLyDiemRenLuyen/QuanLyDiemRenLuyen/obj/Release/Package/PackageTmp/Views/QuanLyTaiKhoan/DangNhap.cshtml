@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Đăng Nhập";
+    Layout = "~/Views/Shared/_LayoutPageDangNhap.cshtml";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+           
+                <form action="" method="post" class="fh5co-form animate-box fadeIn animated-fast" data-animate-effect="fadeIn">
+                    <h2 class="text-center"><img src="~/Content/DangNhap/logo.png" style="width:250px;" alt="Trường Đại Học Thủ Dầu Một"></h2>
+                   
+                    <h2 class="text-center">Đăng nhập</h2>
+                    <h4>@ViewBag.ThongBao</h4>
+
+                    @using (Html.BeginForm()) {
+                    <div class="form-group">
+                        <label for="mssv" class="sr-only">Mã đăng nhập</label>
+                        <input type="text" class="form-control" name="mssv" id="mssv" placeholder="Mã đăng nhập" required="" autofocus="" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="sr-only">Mật khẩu</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Mật khẩu" required="" autocomplete="off">
+                    </div>
+                  
+
+                    <div class="form-group">
+                        <input type="submit" id="btnLogin" name="btnLogin" value="Đăng nhập" class="btn btn-primary">
+                    </div>
+                    }
+
+                </form>
+            
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 60px; clear: both;">
+        <div class="col-md-12 text-center"><p><small>Copyright © 2019 Đại Học Thủ Dầu Một<br>All Rights Reserved.</small></p></div>
+    </div>
+</div>

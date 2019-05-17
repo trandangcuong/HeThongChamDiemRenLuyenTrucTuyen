@@ -1,0 +1,15 @@
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\bin\Debug\WinfromQuetThe.exe.config
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\bin\Debug\WinfromQuetThe.exe
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\bin\Debug\WinfromQuetThe.pdb
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\bin\Debug\AutoClosingMessageBox.dll
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\obj\Debug\WinfromQuetThe.Form1.resources
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\obj\Debug\WinfromQuetThe.Properties.Resources.resources
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\obj\Debug\WinfromQuetThe.csproj.GenerateResource.Cache
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\obj\Debug\WinfromQuetThe.exe
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\obj\Debug\WinfromQuetThe.pdb
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\bin\Debug\EntityFramework.dll
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\bin\Debug\EntityFramework.xml
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\obj\Debug\WinfromQuetThe.Form2.resources
+C:\Users\cuong\Documents\Visual Studio 2015\Projects\WinfromQuetThe\WinfromQuetThe\obj\Debug\WinfromQuetThe.csprojResolveAssemblyReference.cache
